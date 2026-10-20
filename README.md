@@ -4,8 +4,8 @@
 
 <h1 align="center">Deal Radar</h1>
 
-<p align="center"><b>Be the first to message the seller.</b><br>
-Deal Radar watches Czech, Slovak and EU marketplaces for the things you collect and pings you on Telegram within a minute of a new listing — before the deal is gone.</p>
+<h1 align="center"><b>Be the first to message the seller.</b></h1><br>
+<p align="center">Deal Radar watches Czech, Slovak and EU marketplaces for the things you collect and pings you on Telegram within a minute of a new listing — before the deal is gone.</p>
 
 <p align="center">
   <a href="https://radar.4xs.dev">radar.4xs.dev</a> · <a href="CHANGELOG.md">Changelog</a> · <a href="API.md">API</a> · by <a href="https://4xs.dev">4xs.dev</a>
