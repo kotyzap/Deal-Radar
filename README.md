@@ -66,29 +66,3 @@
 
 Private pilot — login is by invite. Built on Cloudflare Workers + D1, Telegram Login and a Chrome/Firefox extension.
 
-## Development
-
-Requires Node.js and [Wrangler](https://developers.cloudflare.com/workers/wrangler/) (installed as a dev dependency).
-
-```bash
-npm install
-npm run db:local      # create the local D1 database (schema + migrations)
-npm run dev           # Worker on http://localhost:8787
-npm test              # smoke tests
-npm run test:watcher  # parser + FX unit tests
-npm run watch         # optional Mac-side watcher (watcher/watcher.mjs)
-```
-
-Secrets go in `.dev.vars` (not committed).
-
-| Path | What |
-|---|---|
-| `src/` | Cloudflare Worker (API, cron polling, Telegram, billing) |
-| `extension/` | Chrome/Firefox extension (FB Marketplace & groups) |
-| `watcher/` | Source parsers, shared with the optional local watcher |
-| `migrations/`, `schema.sql` | D1 schema |
-| `docs/` | Landing page and screenshots |
-
----
-
-© Pavel Kotyza · [4xs.dev](https://4xs.dev)
