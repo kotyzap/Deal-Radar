@@ -39,17 +39,30 @@ add('alt.wallet', null, `Peněženka: zůstatek, cena za den, zbývající dny a
 add('alt.walletDark', null, `Peněženka, tmavý motiv`, `Guthaben, dunkles Design`, `ウォレット（ダークテーマ）`);
 
 add('how.1', null,
-  `<b>Získejte pozvánku.</b> Rozšíření Deal Radar pro Chrome nebo Firefox dostanete přímo — v žádném veřejném obchodě není.`,
-  `<b>Einladung erhalten.</b> Sie bekommen die Deal-Radar-Erweiterung für Chrome oder Firefox direkt — sie ist in keinem öffentlichen Store.`,
-  `<b>招待を受ける。</b>Chrome／Firefox用のDeal Radar拡張機能が直接届きます。公開ストアにはありません。`);
+  `<b>Získejte pozvánku.</b> Odkaz s pozvánkou a rozšíření Deal Radar pro Chrome nebo Firefox dostanete přímo — v žádném veřejném obchodě není.`,
+  `<b>Einladung erhalten.</b> Sie bekommen einen Einladungslink und die Deal-Radar-Erweiterung für Chrome oder Firefox direkt — sie ist in keinem öffentlichen Store.`,
+  `<b>招待を受ける。</b>招待リンクとChrome／Firefox用のDeal Radar拡張機能が直接届きます。公開ストアにはありません。`);
 add('how.2', null,
-  `<b>Přihlaste se přes Telegram</b> v rozšíření (vyskakovací okno → Hlídače). Žádné heslo, žádný e-mail. Upozornění chodí na stejný účet Telegram.`,
-  `<b>Mit Telegram anmelden</b> in der Erweiterung (Popup → Suchaufträge). Kein Passwort, keine E-Mail. Treffer kommen im selben Telegram-Konto an.`,
-  `拡張機能から<b>Telegramでログイン</b>（ポップアップ → ウォッチ）。パスワードもメールも不要。通知は同じTelegramアカウントに届きます。`);
+  `<b>Stiskněte Start v @DealRadarRobot a přihlaste se přes Telegram</b> — otevřete odkaz s pozvánkou, nebo rozšíření (vyskakovací okno → Hlídače → Začínáme) a vložte odkaz tam. Žádné heslo, žádný e-mail. Upozornění chodí na stejný účet Telegram.`,
+  `<b>Bei @DealRadarRobot auf Start drücken, dann mit Telegram anmelden</b> — den Einladungslink öffnen oder die Erweiterung (Popup → Suchaufträge → Erste Schritte) und den Link dort einfügen. Kein Passwort, keine E-Mail. Treffer kommen im selben Telegram-Konto an.`,
+  `<b>@DealRadarRobotで「Start」を押してから、Telegramでログイン</b>。招待リンクを開くか、拡張機能（ポップアップ → ウォッチ → はじめに）にリンクを貼り付けます。パスワードもメールも不要。通知は同じTelegramアカウントに届きます。`);
 add('how.3', null,
   `<b>Vytvořte hlídač.</b> Klíčová slova, která musí být v názvu, slova, která tam být nesmí, minimální a maximální cena ve vaší měně — CZK, EUR, PLN nebo USD (inzeráty v jiných měnách se přepočítávají denním kurzem ČNB), zdroje a u Facebooku skupiny, které se mají prohledávat. 7denní náhled ukáže, co by zachytil.`,
   `<b>Suchauftrag anlegen.</b> Stichwörter, die vorkommen müssen, Stichwörter, die nicht vorkommen dürfen, Mindest- und Höchstpreis in Ihrer Währung — CZK, EUR, PLN oder USD (Angebote in anderen Währungen werden zum täglichen ČNB-Kurs umgerechnet), die Quellen und bei Facebook die zu durchsuchenden Gruppen. Eine 7-Tage-Vorschau zeigt, was er gefunden hätte.`,
   `<b>ウォッチを作成。</b>含めるキーワード、除外するキーワード、あなたの通貨（CZK・EUR・PLN・USD）での最低・最高価格（他の通貨の出品はČNBの日次レートで換算）、ソース、Facebookの場合は検索するグループを指定します。7日間のプレビューで、何が見つかったはずかを確認できます。`);
+add('cov.h2', null, `Kde Deal Radar hledá`, `Wo Deal Radar sucht`, `Deal Radarの検索範囲`);
+add('cov.p', null, `Bazary v 11 zemích se kontrolují každou minutu, nejnovější první. Facebook Marketplace, vaše facebookové skupiny, eBay.com a Chrono24 fungují, ať jste kdekoli.`,
+  `Marktplätze in 11 Ländern werden jede Minute geprüft, die neuesten zuerst. Facebook Marketplace, Ihre Facebook-Gruppen, eBay.com und Chrono24 funktionieren überall.`,
+  `11か国のマーケットプレイスを毎分、新着順にチェックします。Facebook Marketplace、あなたのFacebookグループ、eBay.com、Chrono24はどこにいても使えます。`);
+add('alt.map', null, `Mapa: pokryté jsou Česko, Slovensko, Polsko, Německo, Rakousko, Dánsko, Norsko, Švédsko, Finsko, USA a Japonsko`, `Karte: abgedeckt sind Tschechien, Slowakei, Polen, Deutschland, Österreich, Dänemark, Norwegen, Schweden, Finnland, USA und Japan`, `地図：チェコ、スロバキア、ポーランド、ドイツ、オーストリア、デンマーク、ノルウェー、スウェーデン、フィンランド、米国、日本が対象`);
+add('news.freeH', null, `5 hlídačů zdarma`, `5 kostenlose Suchaufträge`, `無料ウォッチ5件`);
+add('news.freeP', null, `Během zkušebního období nebo pozvánky zdarma je 5 hlídačů zdarma. Každý další stojí od 5 € týdně — každý hlídač se prohledává každou minutu na každém svém zdroji. Když dojdou peníze, pozastaví se jen ty navíc.`,
+  `Während der Testphase oder einer kostenlosen Einladung sind 5 Suchaufträge kostenlos. Jeder weitere kostet ab 5 €/Woche — jeder Suchauftrag wird jede Minute auf jeder seiner Quellen durchsucht. Ist das Guthaben leer, pausieren nur die zusätzlichen.`,
+  `無料トライアルや無料招待の期間中は5件のウォッチが無料です。それを超える分は1件あたり週€5から。各ウォッチは毎分すべてのソースで検索されるためです。残高がなくなると、追加分だけが一時停止します。`);
+add('news.startH', null, `Snadnější start`, `Leichterer Start`, `スムーズな開始`);
+add('news.startP', null, `Otevřete odkaz s pozvánkou, nebo ho vložte do rozšíření — na pořadí nezáleží. Aplikace upozorní, když vám Telegram nemůže psát, a u každého hlídače ukazuje, kdy byl naposledy zkontrolován.`,
+  `Öffnen Sie den Einladungslink oder fügen Sie ihn in die Erweiterung ein — die Reihenfolge ist egal. Die App warnt, wenn Telegram Sie nicht erreicht, und jeder Suchauftrag zeigt, wann er zuletzt geprüft wurde.`,
+  `招待リンクを開くか、拡張機能に貼り付けてください。順番はどちらでも構いません。Telegramに届かない場合はアプリが警告し、各ウォッチには最終チェック時刻が表示されます。`);
 add('news.h2', null, `Novinky`, `Neuigkeiten`, `最新情報`);
 add('news.nordH', null, `Skandinávie`, `Skandinavien`, `北欧`);
 add('news.nordP', null,
@@ -71,11 +84,6 @@ add('news.curP', null,
   `Vyberte CZK, EUR, PLN nebo USD. Upozornění ukážou původní cenu inzerátu i cenu ve vaší měně — „850 PLN (≈ 201 EUR)“ — a minimální i maximální cenu hlídače zadáváte ve své měně.`,
   `Wählen Sie CZK, EUR, PLN oder USD. Treffer zeigen den Originalpreis und Ihren — „850 PLN (≈ 201 EUR)“ — und Mindest- und Höchstpreis eines Suchauftrags geben Sie in Ihrer Währung ein.`,
   `CZK・EUR・PLN・USDから選べます。通知には出品の元の価格とあなたの通貨での価格（「850 PLN (≈ 201 EUR)」）が表示され、ウォッチの最低・最高価格もあなたの通貨で設定できます。`);
-add('news.langH', null, `Čtyři jazyky`, `Vier Sprachen`, `4つの言語`);
-add('news.langP', null,
-  `Rozšíření, radar.4xs.dev i tato stránka mluví anglicky, česky, německy a japonsky. Řídí se jazykem prohlížeče; přepnout jde v záhlaví.`,
-  `Die Erweiterung, radar.4xs.dev und diese Seite gibt es auf Englisch, Tschechisch, Deutsch und Japanisch. Sie folgen Ihrem Browser; umschalten können Sie oben in der Kopfzeile.`,
-  `拡張機能、radar.4xs.dev、このページは英語・チェコ語・ドイツ語・日本語に対応。ブラウザの言語に従い、ヘッダーで切り替えられます。`);
 add('how.4', null,
   `<b>Dostaňte upozornění.</b> Každý zdroj se kontroluje jednou za minutu. Nový odpovídající inzerát přistane v Telegramu s názvem, cenou (i ve vaší měně) a odkazem — a vy napíšete prodejci.`,
   `<b>Treffer erhalten.</b> Jede Quelle wird einmal pro Minute abgefragt. Ein neues passendes Angebot landet mit Titel, Preis (auch in Ihrer Währung) und Link in Telegram — Sie schreiben dem Verkäufer.`,
@@ -127,7 +135,7 @@ add('cap.groups', null,
 
 add('price.h2', null, `Ceník`, `Preise`, `料金`);
 add('plan.1', null, `7 dní <small>zkušebně zdarma</small>`, `7 Tage <small>kostenlos testen</small>`, `7日間 <small>無料トライアル</small>`);
-add('plan.1p', null, `Každý účet začíná týdnem neomezených hlídačů.`, `Jedes Konto startet mit einer Woche unbegrenzter Suchaufträge.`, `すべてのアカウントは、ウォッチ無制限の1週間から始まります。`);
+add('plan.1p', null, `Každý účet začíná týdnem zdarma s až 5 hlídači. Každý další stojí od 5 € týdně — každý hlídač se prohledává každou minutu na každém svém zdroji.`, `Jedes Konto startet mit einer kostenlosen Woche mit bis zu 5 Suchaufträgen. Jeder weitere kostet ab 5 €/Woche — jeder Suchauftrag wird jede Minute auf jeder seiner Quellen durchsucht.`, `すべてのアカウントは、ウォッチ5件までの無料1週間から始まります。それを超える分は1件あたり週€5から。各ウォッチは毎分すべてのソースで検索されます。`);
 add('plan.2', null, `od 2 € <small>za hlídač a týden</small>`, `ab 2 € <small>pro Suchauftrag und Woche</small>`, `€2から <small>ウォッチ1件・1週間あたり</small>`);
 add('plan.2p', null,
   `Každý aktivní hlídač stojí svou týdenní nabídku, strhávanou denně z peněženky, kterou dobíjíte na Ko-fi se svým osobním DR-kódem.`,

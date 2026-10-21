@@ -40,12 +40,20 @@
 | Mercari JP | <img src="docs/img/flags/jp.svg" alt="JP" height="12"> | browser extension; alerts add a Buyee link for buyers outside Japan |
 
 <picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/img/coverage-dark.svg">
+  <img src="docs/img/coverage.svg" alt="Map of the covered countries: Czechia, Slovakia, Poland, Germany, Austria, Denmark, Norway, Sweden, Finland, the USA and Japan">
+</picture>
+
+<picture>
   <source media="(prefers-color-scheme: dark)" srcset="docs/img/watches-dark.png">
   <img src="docs/img/watches.png" alt="Deal Radar watches list with keywords, price ceiling, sources and bid">
 </picture>
 
 ## What's new
 
+- **5 free watches.** During the free trial or a free invite, 5 watches are free (an invite can give more). Each one beyond costs from €5/week — every watch is searched every minute on each of its sources. If the wallet runs out, only those extra watches pause.
+- **Smoother start.** Open the invite link or paste it into the extension — either order works. The app warns when Telegram can't reach you (Start not pressed) and has a Test button, and every watch shows when it was last checked.
+- **Coverage map.** Marketplaces in 11 countries, plus FB, eBay.com and Chrono24 anywhere — see the map above. New screenshots too.
 - **Scandinavia.** FINN.no, Blocket.se, Tori.fi and DBA.dk join the sources, checked by the server every minute, newest first. Prices in NOK, SEK, EUR and DKK, with your currency next to them.
 - **Chrono24.** The watch marketplace is checked by the browser extension, newest first.
 - **Japan.** Mercari JP, checked by the browser extension. Mercari needs a Japanese phone number, so every Mercari alert also carries a Buyee link to buy from abroad.
@@ -57,8 +65,8 @@
 
 ## How it works
 
-1. **Get an invite.** You receive the Deal Radar extension for Chrome or Firefox directly — it isn't in any public store.
-2. **Log in with Telegram** from the extension (popup → Watches). No password, no e-mail. Alerts arrive in the same Telegram account.
+1. **Get an invite.** You receive an invite link and the Deal Radar extension for Chrome or Firefox directly — it isn't in any public store.
+2. **Press Start in @DealRadarRobot, then log in with Telegram** — open the invite link, or the extension (popup → Watches → Get started) and paste the link there. No password, no e-mail. Alerts arrive in the same Telegram account; if Telegram can't reach you, the app says so and offers a test message.
 3. **Create a watch.** Keywords that must appear, keywords that must not, a minimum and maximum price in your currency — CZK, EUR, PLN or USD (listings in other currencies are converted at the daily ČNB rate), the sources and, for Facebook, the groups to search. A 7-day preview shows what it would have caught.
 4. **Get the alert.** Every source is polled once a minute. A new listing that matches lands in Telegram with title, price (also in your currency) and link — you message the seller.
 5. **Vote Good or Junk.** One tap per alert tells the radar how well a watch is tuned.
@@ -100,7 +108,7 @@
 
 | | |
 |---|---|
-| **7 days free trial** | Every account starts with a week of unlimited watches. |
+| **7 days free trial** | Every account starts with a free week of up to 5 watches (an invite can give more, or a longer free period). Each watch beyond them costs from €5/week — every watch is searched every minute on each of its sources. |
 | **from €2 per watch per week** | Each active watch costs its weekly bid, charged daily from a wallet you top up on [Ko-fi](https://ko-fi.com/pavelk) with your personal DR-code. |
 | **Bid to hear first** | When one listing matches several people's watches, the highest bid is alerted first; each next place a minute later. Alerts show your rank and the top rival bid. |
 
