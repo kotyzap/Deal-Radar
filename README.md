@@ -5,49 +5,87 @@
 <h1 align="center">Deal Radar</h1>
 
 <h1 align="center"><b>Be the first to message the seller.</b></h1><br>
-<p align="center">Deal Radar watches Czech, Slovak and EU marketplaces for the things you collect and pings you on Telegram within a minute of a new listing — before the deal is gone.</p>
+<p align="center">Deal Radar watches Facebook Marketplace and your Facebook groups — plus the top marketplaces in Czechia, Slovakia, Poland, Germany and Austria, and eBay.com and Craigslist in the US — and pings you on Telegram within a minute of a new listing, before the deal is gone.</p>
+
+<p align="center"><b>Private beta · invite only.</b> No public download — the browser extension is shared directly with invited pilot users.</p>
 
 <p align="center">
-  <a href="https://radar.4xs.dev">radar.4xs.dev</a> · by <a href="https://4xs.dev">4xs.dev</a>
+  <a href="https://radar.4xs.dev">radar.4xs.dev</a> · <a href="https://kotyzap.github.io/Deal-Radar/">project page</a> · by <a href="https://4xs.dev">4xs.dev</a>
 </p>
 
-**Sources:** Bazoš CZ · Bazoš SK · Aukro · Sbazar · Vinted · OLX.pl · Allegro.cz · FB Marketplace
+**Sources**
+
+| Source | Country | Checked by |
+|---|---|---|
+| FB Marketplace | <img src="docs/img/flags/cz.svg" alt="CZ" height="12"> <img src="docs/img/flags/sk.svg" alt="SK" height="12"> <img src="docs/img/flags/pl.svg" alt="PL" height="12"> <img src="docs/img/flags/de.svg" alt="DE" height="12"> <img src="docs/img/flags/at.svg" alt="AT" height="12"> | browser extension, around your location (default Prague + 500 km) |
+| FB groups | <img src="docs/img/flags/cz.svg" alt="CZ" height="12"> <img src="docs/img/flags/sk.svg" alt="SK" height="12"> <img src="docs/img/flags/pl.svg" alt="PL" height="12"> <img src="docs/img/flags/de.svg" alt="DE" height="12"> <img src="docs/img/flags/at.svg" alt="AT" height="12"> | browser extension, groups you joined |
+| Bazoš CZ | <img src="docs/img/flags/cz.svg" alt="CZ" height="12"> | server |
+| Bazoš SK | <img src="docs/img/flags/sk.svg" alt="SK" height="12"> | server |
+| Aukro | <img src="docs/img/flags/cz.svg" alt="CZ" height="12"> | server |
+| Sbazar | <img src="docs/img/flags/cz.svg" alt="CZ" height="12"> | server |
+| Vinted | <img src="docs/img/flags/cz.svg" alt="CZ" height="12"> | server |
+| OLX.pl | <img src="docs/img/flags/pl.svg" alt="PL" height="12"> | server |
+| Allegro.cz | <img src="docs/img/flags/cz.svg" alt="CZ" height="12"> | server |
+| willhaben.at | <img src="docs/img/flags/at.svg" alt="AT" height="12"> | server |
+| Kleinanzeigen.de | <img src="docs/img/flags/de.svg" alt="DE" height="12"> | server |
+| eBay.de | <img src="docs/img/flags/de.svg" alt="DE" height="12"> | server |
+| eBay.at | <img src="docs/img/flags/at.svg" alt="AT" height="12"> | server |
+| eBay.com | <img src="docs/img/flags/us.svg" alt="US" height="12"> | server, US sellers only |
+| Craigslist | <img src="docs/img/flags/us.svg" alt="US" height="12"> | browser extension, up to 5 cities per watch |
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="docs/img/watches-dark.png">
   <img src="docs/img/watches.png" alt="Deal Radar watches list with keywords, price ceiling, sources and bid">
 </picture>
 
+## What's new
+
+- **USA.** eBay.com (US sellers) is checked by the server every minute, and Craigslist by the browser extension: pick up to 5 Craigslist areas per watch from Craigslist's own list (a town belongs to its nearest city's area — Leander is in *austin*). Prices in USD.
+- **Pause switch.** One tap in the extension popup pauses Facebook and Craigslist checks for 1 h, 3 h or until you start again, and closes the pinned Facebook tab so your browser stays light. Server sources keep running.
+- **Germany and Austria.** willhaben.at, Kleinanzeigen.de, eBay.de and eBay.at join the sources. Like Bazoš or OLX, the server checks them every minute, newest first.
+- **Prices in your currency.** Pick CZK, EUR, PLN or USD. Alerts show the listing's own price and yours — “850 PLN (≈ 201 EUR)” — and you set a watch's min and max price in your currency.
+- **Four languages.** The extension, radar.4xs.dev and the [project page](https://kotyzap.github.io/Deal-Radar/) speak English, Czech, German and Japanese. They follow your browser; switch in the header.
+
 ## How it works
 
-1. **Log in with Telegram.** No password, no e-mail. Alerts arrive in the same Telegram account.
-2. **Create a watch.** Keywords that must appear, keywords that must not, a price ceiling in CZK (listings in EUR or PLN are converted at the daily ČNB rate), and the sources to watch. A 7-day preview shows what it would have caught.
-3. **Get the alert.** Every source is polled once a minute. A new listing that matches lands in Telegram with title, price and link — you message the seller.
-4. **Vote Good or Junk.** One tap per alert tells the radar how well a watch is tuned.
+1. **Get an invite.** You receive the Deal Radar extension for Chrome or Firefox directly — it isn't in any public store.
+2. **Log in with Telegram** from the extension (popup → Watches). No password, no e-mail. Alerts arrive in the same Telegram account.
+3. **Create a watch.** Keywords that must appear, keywords that must not, a minimum and maximum price in your currency — CZK, EUR, PLN or USD (listings in other currencies are converted at the daily ČNB rate), the sources and, for Facebook, the groups to search. A 7-day preview shows what it would have caught.
+4. **Get the alert.** Every source is polled once a minute. A new listing that matches lands in Telegram with title, price (also in your currency) and link — you message the seller.
+5. **Vote Good or Junk.** One tap per alert tells the radar how well a watch is tuned.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="docs/img/editor-dark.png">
-  <img src="docs/img/editor.png" alt="Watch editor with a 7-day preview of matching listings">
+  <img src="docs/img/editor.png" alt="Watch editor with min and max price, sources, FB groups and a 7-day preview">
 </picture>
 
-*The editor shows what the watch would have caught in the last 7 days.*
+*The editor: price range, sources, the watch's FB groups, and what it would have caught in the last 7 days.*
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="docs/img/alerts-dark.png">
   <img src="docs/img/alerts.png" alt="Alerts list with prices, sources and Good / Junk votes">
 </picture>
 
-*Every alert also goes to Telegram. “#1 of 3” = you heard first among three bidders.*
+*Every alert also goes to Telegram. “#1 of 3” = you heard first among three bidders; “#2 of 2” = someone outbid you and heard a minute earlier.*
 
-## Facebook Marketplace, in your own browser
+## Facebook Marketplace and groups, in your own browser
 
-<img align="right" width="260" src="docs/img/popup.png" alt="Extension popup: FB searches, last check, latest alerts">
+<img align="right" width="260" src="docs/img/popup.png" alt="Extension popup: FB Marketplace and group searches, last check, latest alerts">
 
 - **Browser extension.** FB has no public search API, so the extension checks your searches from your normal, logged-in Chrome or Firefox — one pinned tab, every ~3 minutes, newest first, Prague + 500 km.
-- **Nothing leaves but listings.** The extension pushes only the cards it sees (title, price, link) to the radar. Your Facebook session stays in your browser.
-- **Other sources need no extension.** Bazoš, Aukro, Sbazar, Vinted, OLX.pl and Allegro.cz are polled by the server itself, so alerts keep coming when your computer is off.
+- **Your FB groups.** Many deals are posted only in collector groups. On the FB groups tab you tick up to 10 groups you've joined; each watch then picks which of them to search. The extension runs Facebook's own search inside each group for the watch's keywords, newest posts first, about every 10 minutes.
+- **Only offers, only for you.** A group post alerts only if it looks like an offer — a price or a sale word (prodám, na prodej, cenu nabídněte, sprzedam…) and no “wanted” word (koupím, hledám, kupię…). Group posts are private: they alert only the person whose browser found them, never go into the shared index and aren't part of the bidding.
+- **Nothing leaves but listings.** The extension pushes only the cards and posts it sees (title, price, link) to the radar. Your Facebook session stays in your browser.
+- **Other sources need no extension.** Bazoš, Aukro, Sbazar, Vinted, OLX.pl, Allegro.cz, willhaben.at, Kleinanzeigen.de and eBay.de/.at/.com are polled by the server itself, so alerts keep coming when your computer is off.
 
 <br clear="right">
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/img/groups-dark.png">
+  <img src="docs/img/groups.png" alt="FB groups tab: tick up to 10 joined groups that watches may search">
+</picture>
+
+*FB groups tab: tick the groups Deal Radar may search; each watch picks from these.*
 
 ## Pricing
 
@@ -64,5 +102,8 @@
 
 ## Status
 
-Private pilot — login is by invite. Built on Cloudflare Workers + D1, Telegram Login and a Chrome/Firefox extension.
+Private beta — invite only. No public download: the extension is shared directly with pilot users, and only invited Telegram accounts can log in. Built on Cloudflare Workers + D1, Telegram Login and a Chrome/Firefox extension.
 
+---
+
+© Pavel Kotyza · [4xs.dev](https://4xs.dev)
