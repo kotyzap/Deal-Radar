@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title data-i18n="meta.title">Deal Radar — be the first to message the seller</title>
-<meta name="description" content="Deal Radar watches Facebook Marketplace and your Facebook groups, plus Bazoš, Aukro, Sbazar, Vinted, OLX.pl and Allegro.cz, for the things collectors hunt and sends a Telegram alert within a minute of a new listing.">
+<meta name="description" content="Deal Radar watches Facebook Marketplace and your Facebook groups, plus Bazoš, Aukro, Sbazar, Vinted, OLX.pl, Allegro.cz, willhaben.at, Kleinanzeigen.de and eBay, for the things collectors hunt and sends a Telegram alert within a minute of a new listing.">
 <link rel="icon" href="img/favicon-32.png" sizes="32x32">
 <link rel="apple-touch-icon" href="img/icon-512.png">
 <link rel="stylesheet" href="modernist.css">
@@ -28,6 +28,8 @@
   .steps li { display: grid; grid-template-columns: 44px 1fr; gap: 12px; align-items: baseline; }
   .steps li::before { counter-increment: s; content: counter(s, decimal-leading-zero); font-weight: 800; font-size: 22px; color: var(--accent); }
   .sources { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+  .sources .tag { display: inline-flex; align-items: center; gap: 6px; }
+  .flags { display: inline-flex; gap: 2px; } .flags img { display: block; width: 16px; height: 12px; outline: 1px solid var(--divider); outline-offset: -1px; }
   .shot { display: block; width: 100%; height: auto; border: 2px solid var(--divider); margin-top: 18px; }
   .shot.d { display: none; }
   :root[data-theme="dark"] .shot.l { display: none; } :root[data-theme="dark"] .shot.d { display: block; }
@@ -65,15 +67,26 @@
   <div class="hero">
     <div class="kicker" data-i18n="hero.kicker">Private beta · invite only</div>
     <h1 data-i18n="hero.h1">Be the first to message the seller.</h1>
-    <p class="lead" data-i18n="hero.lead">Deal Radar watches Facebook Marketplace and your Facebook groups — plus Bazoš, Aukro, Vinted, OLX and Allegro — and pings you on Telegram within a minute of a new listing, before the deal is gone.</p>
+    <p class="lead" data-i18n="hero.lead">Deal Radar watches Facebook Marketplace and your Facebook groups — plus the top marketplaces in Czechia, Slovakia, Poland, Germany and Austria — and pings you on Telegram within a minute of a new listing, before the deal is gone.</p>
     <div class="cta">
       <a class="btn primary" href="#how" data-i18n="cta.how">How it works</a>
       <a class="btn" href="https://github.com/kotyzap/deal-radar" data-i18n="cta.github">View on GitHub</a>
     </div>
     <p class="invite" data-i18n="hero.invite">Deal Radar is in a private pilot. There is no public download: the browser extension is shared directly with invited users.</p>
     <div class="sources">
-      <span class="tag">FB Marketplace</span><span class="tag" data-i18n="src.fbGroups">FB groups</span><span class="tag">Bazoš CZ</span><span class="tag">Bazoš SK</span><span class="tag">Aukro</span>
-      <span class="tag">Sbazar</span><span class="tag">Vinted</span><span class="tag">OLX.pl</span><span class="tag">Allegro.cz</span>
+      <span class="tag"><i class="flags"><img src="img/flags/cz.svg" alt="CZ" width="16" height="12"><img src="img/flags/sk.svg" alt="SK" width="16" height="12"><img src="img/flags/pl.svg" alt="PL" width="16" height="12"><img src="img/flags/de.svg" alt="DE" width="16" height="12"><img src="img/flags/at.svg" alt="AT" width="16" height="12"></i>FB Marketplace</span>
+      <span class="tag"><i class="flags"><img src="img/flags/cz.svg" alt="CZ" width="16" height="12"><img src="img/flags/sk.svg" alt="SK" width="16" height="12"><img src="img/flags/pl.svg" alt="PL" width="16" height="12"><img src="img/flags/de.svg" alt="DE" width="16" height="12"><img src="img/flags/at.svg" alt="AT" width="16" height="12"></i><span data-i18n="src.fbGroups">FB groups</span></span>
+      <span class="tag"><i class="flags"><img src="img/flags/cz.svg" alt="CZ" width="16" height="12"></i>Bazoš CZ</span>
+      <span class="tag"><i class="flags"><img src="img/flags/sk.svg" alt="SK" width="16" height="12"></i>Bazoš SK</span>
+      <span class="tag"><i class="flags"><img src="img/flags/cz.svg" alt="CZ" width="16" height="12"></i>Aukro</span>
+      <span class="tag"><i class="flags"><img src="img/flags/cz.svg" alt="CZ" width="16" height="12"></i>Sbazar</span>
+      <span class="tag"><i class="flags"><img src="img/flags/cz.svg" alt="CZ" width="16" height="12"></i>Vinted</span>
+      <span class="tag"><i class="flags"><img src="img/flags/pl.svg" alt="PL" width="16" height="12"></i>OLX.pl</span>
+      <span class="tag"><i class="flags"><img src="img/flags/cz.svg" alt="CZ" width="16" height="12"></i>Allegro.cz</span>
+      <span class="tag"><i class="flags"><img src="img/flags/at.svg" alt="AT" width="16" height="12"></i>willhaben.at</span>
+      <span class="tag"><i class="flags"><img src="img/flags/de.svg" alt="DE" width="16" height="12"></i>Kleinanzeigen.de</span>
+      <span class="tag"><i class="flags"><img src="img/flags/de.svg" alt="DE" width="16" height="12"></i>eBay.de</span>
+      <span class="tag"><i class="flags"><img src="img/flags/at.svg" alt="AT" width="16" height="12"></i>eBay.at</span>
     </div>
     <figure>
       <img class="shot l" src="img/watches.png" alt="Deal Radar watches list with keywords, price ceiling, sources and bid" data-i18n-attr="alt:alt.watches" width="1200" height="860">
@@ -81,13 +94,31 @@
     </figure>
   </div>
 
+  <section id="news">
+    <h2 data-i18n="news.h2">What's new</h2>
+    <div class="cols">
+      <div>
+        <h3 data-i18n="news.deH">Germany and Austria</h3>
+        <p data-i18n="news.deP">willhaben.at, Kleinanzeigen.de, eBay.de and eBay.at join the sources. Like Bazoš or OLX, the server checks them every minute, newest first.</p>
+      </div>
+      <div>
+        <h3 data-i18n="news.curH">Prices in your currency</h3>
+        <p data-i18n="news.curP">Pick CZK, EUR or PLN. Alerts show the listing's own price and yours — “850 PLN (≈ 201 EUR)” — and you set a watch's min and max price in your currency.</p>
+      </div>
+      <div>
+        <h3 data-i18n="news.langH">Four languages</h3>
+        <p data-i18n="news.langP">The extension, radar.4xs.dev and this page speak English, Czech, German and Japanese. They follow your browser; switch in the header.</p>
+      </div>
+    </div>
+  </section>
+
   <section id="how">
     <h2 data-i18n="cta.how">How it works</h2>
     <ol class="steps">
       <li><div data-i18n="how.1"><b>Get an invite.</b> You receive the Deal Radar extension for Chrome or Firefox directly — it isn't in any public store.</div></li>
       <li><div data-i18n="how.2"><b>Log in with Telegram</b> from the extension (popup → Watches). No password, no e-mail. Alerts arrive in the same Telegram account.</div></li>
-      <li><div data-i18n="how.3"><b>Create a watch.</b> Keywords that must appear, keywords that must not, a minimum and maximum price in CZK (listings in EUR or PLN are converted at the daily ČNB rate), the sources and, for Facebook, the groups to search. A 7-day preview shows what it would have caught.</div></li>
-      <li><div data-i18n="how.4"><b>Get the alert.</b> Every source is polled once a minute. A new listing that matches lands in Telegram with title, price and link — you message the seller.</div></li>
+      <li><div data-i18n="how.3"><b>Create a watch.</b> Keywords that must appear, keywords that must not, a minimum and maximum price in your currency — CZK, EUR or PLN (listings in other currencies are converted at the daily ČNB rate), the sources and, for Facebook, the groups to search. A 7-day preview shows what it would have caught.</div></li>
+      <li><div data-i18n="how.4"><b>Get the alert.</b> Every source is polled once a minute. A new listing that matches lands in Telegram with title, price (also in your currency) and link — you message the seller.</div></li>
       <li><div data-i18n="how.5"><b>Vote Good or Junk.</b> One tap per alert tells the radar how well a watch is tuned.</div></li>
     </ol>
     <figure>
@@ -124,7 +155,7 @@
       </div>
       <div>
         <h3 data-i18n="fb.otherH">Other sources need no extension</h3>
-        <p data-i18n="fb.otherP">Bazoš, Aukro, Sbazar, Vinted, OLX.pl and Allegro.cz are polled by the server itself, so alerts keep coming when your computer is off.</p>
+        <p data-i18n="fb.otherP">Bazoš, Aukro, Sbazar, Vinted, OLX.pl, Allegro.cz, willhaben.at, Kleinanzeigen.de and eBay.de/.at are polled by the server itself, so alerts keep coming when your computer is off.</p>
       </div>
     </div>
     <figure>
