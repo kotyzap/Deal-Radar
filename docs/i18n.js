@@ -50,11 +50,34 @@ add('how.3', null,
   `<b>Vytvořte hlídač.</b> Klíčová slova, která musí být v názvu, slova, která tam být nesmí, minimální a maximální cena ve vaší měně — CZK, EUR, PLN nebo USD (inzeráty v jiných měnách se přepočítávají denním kurzem ČNB), zdroje a u Facebooku skupiny, které se mají prohledávat. 7denní náhled ukáže, co by zachytil.`,
   `<b>Suchauftrag anlegen.</b> Stichwörter, die vorkommen müssen, Stichwörter, die nicht vorkommen dürfen, Mindest- und Höchstpreis in Ihrer Währung — CZK, EUR, PLN oder USD (Angebote in anderen Währungen werden zum täglichen ČNB-Kurs umgerechnet), die Quellen und bei Facebook die zu durchsuchenden Gruppen. Eine 7-Tage-Vorschau zeigt, was er gefunden hätte.`,
   `<b>ウォッチを作成。</b>含めるキーワード、除外するキーワード、あなたの通貨（CZK・EUR・PLN・USD）での最低・最高価格（他の通貨の出品はČNBの日次レートで換算）、ソース、Facebookの場合は検索するグループを指定します。7日間のプレビューで、何が見つかったはずかを確認できます。`);
+add('flow.h', null, `Od inzerátu k upozornění`, `Vom Inserat zur Benachrichtigung`, `出品から通知まで`);
+add('flow.you', null, `S Deal Radarem`, `Mit Deal Radar`, `Deal Radarなら`);
+add('flow.s1h', null, `Vloženo`, `Eingestellt`, `出品`);
+add('flow.s1p', null, `Prodejce vloží G-Shock na Vinted.`, `Ein Verkäufer stellt eine G-Shock auf Vinted ein.`, `出品者がVintedにG-Shockを出品。`);
+add('flow.s2t', null, `1–3 min`, `1–3 Min.`, `1〜3分`);
+add('flow.s2h', null, `Nalezeno`, `Gefunden`, `検出`);
+add('flow.s2p', null, `Najde ho další kontrola Deal Radaru: na většině webů každou minutu, na Vintedu a Facebooku každé 3 minuty.`, `Die nächste Prüfung von Deal Radar findet es: auf den meisten Seiten jede Minute, auf Vinted und Facebook alle 3 Minuten.`, `Deal Radarの次のチェックで見つかります。ほとんどのサイトは毎分、VintedとFacebookは3分ごと。`);
+add('flow.s3t', null, `+ pár sekund`, `+ Sekunden`, `+ 数秒`);
+add('flow.s3h', null, `Upozornění v Telegramu`, `Telegram-Nachricht`, `Telegram通知`);
+add('flow.s3p', null, `Název, cena ve vaší měně a odkaz — v telefonu.`, `Titel, Preis in Ihrer Währung und Link — auf dem Handy.`, `タイトル、あなたの通貨での価格、リンクがスマホに届きます。`);
+add('flow.s4t', null, `vy`, `Sie`, `あなた`);
+add('flow.s4h', null, `Napíšete prodejci`, `Sie schreiben dem Verkäufer`, `出品者に連絡`);
+add('flow.s4p', null, `Inzerát pořád ukazuje „vystaveno před minutou“.`, `Das Inserat zeigt noch „vor einer Minute eingestellt“.`, `出品にはまだ「1分前に出品」と表示されています。`);
+add('flow.hand', null, `Ruční hledání`, `Von Hand suchen`, `手動で検索`);
+add('flow.slowH', null, `Až příště obnovíte stránku`, `Wenn Sie das nächste Mal neu laden`, `次にページを更新したとき`);
+add('flow.slowP', null, `Často až poté, co prodejci napsal někdo jiný.`, `Oft erst, nachdem jemand anderes dem Verkäufer geschrieben hat.`, `たいていは、他の誰かがすでに出品者に連絡した後です。`);
+add('flow.realK', null, `Skutečné upozornění, 21. října`, `Eine echte Benachrichtigung, 21. Oktober`, `実際の通知（10月21日）`);
+add('flow.realP', null, `Prodejce z Polska na Vintedu, cena převedená na Kč. Když se upozornění otevřelo, inzerát ukazoval „vystaveno před minutou“.`, `Ein polnischer Verkäufer auf Vinted, Preis in CZK umgerechnet. Beim Öffnen der Benachrichtigung zeigte das Inserat „vor einer Minute eingestellt“.`, `Vintedのポーランドの出品者、価格はCZKに換算。通知を開いたとき、出品には「1分前に出品」と表示されていました。`);
+add('flow.engK', null, `Kdo co kontroluje`, `Wer was prüft`, `チェックの担当`);
+add('flow.srvH', null, `Server`, `Der Server`, `サーバー`);
+add('flow.srvP', null, `Každou minutu, počítač může být vypnutý. Bazoš, Aukro, Sbazar, Vinted, Allegro, OLX, Kleinanzeigen, eBay, willhaben, FINN, Blocket, Tori, DBA.`, `Jede Minute, Ihr Computer darf aus sein. Bazoš, Aukro, Sbazar, Vinted, Allegro, OLX, Kleinanzeigen, eBay, willhaben, FINN, Blocket, Tori, DBA.`, `毎分。パソコンの電源は切れていても大丈夫。Bazoš、Aukro、Sbazar、Vinted、Allegro、OLX、Kleinanzeigen、eBay、willhaben、FINN、Blocket、Tori、DBA。`);
+add('flow.extH', null, `Váš prohlížeč`, `Ihr Browser`, `あなたのブラウザ`);
+add('flow.extP', null, `Rozšíření, dokud je prohlížeč otevřený. FB Marketplace, FB skupiny, Craigslist, Mercari JP, Chrono24.`, `Die Erweiterung, solange der Browser offen ist. FB Marketplace, FB-Gruppen, Craigslist, Mercari JP, Chrono24.`, `ブラウザが開いている間は拡張機能が担当。FB Marketplace、FBグループ、Craigslist、メルカリ、Chrono24。`);
 add('cov.h2', null, `Kde Deal Radar hledá`, `Wo Deal Radar sucht`, `Deal Radarの検索範囲`);
-add('cov.p', null, `Bazary v 11 zemích se kontrolují každou minutu, nejnovější první. Facebook Marketplace, vaše facebookové skupiny, eBay.com a Chrono24 fungují, ať jste kdekoli.`,
-  `Marktplätze in 11 Ländern werden jede Minute geprüft, die neuesten zuerst. Facebook Marketplace, Ihre Facebook-Gruppen, eBay.com und Chrono24 funktionieren überall.`,
-  `11か国のマーケットプレイスを毎分、新着順にチェックします。Facebook Marketplace、あなたのFacebookグループ、eBay.com、Chrono24はどこにいても使えます。`);
-add('alt.map', null, `Mapa: pokryté jsou Česko, Slovensko, Polsko, Německo, Rakousko, Dánsko, Norsko, Švédsko, Finsko, USA a Japonsko`, `Karte: abgedeckt sind Tschechien, Slowakei, Polen, Deutschland, Österreich, Dänemark, Norwegen, Schweden, Finnland, USA und Japan`, `地図：チェコ、スロバキア、ポーランド、ドイツ、オーストリア、デンマーク、ノルウェー、スウェーデン、フィンランド、米国、日本が対象`);
+add('cov.p', null, `Bazary v 11 zemích se kontrolují každou minutu, nejnovější první. Katalog Vintedu přidává inzeráty z Polska, Maďarska, Rumunska, Chorvatska a Slovinska. Facebook Marketplace, vaše facebookové skupiny, eBay.com a Chrono24 fungují, ať jste kdekoli.`,
+  `Marktplätze in 11 Ländern werden jede Minute geprüft, die neuesten zuerst. Der Vinted-Katalog bringt Angebote aus Polen, Ungarn, Rumänien, Kroatien und Slowenien dazu. Facebook Marketplace, Ihre Facebook-Gruppen, eBay.com und Chrono24 funktionieren überall.`,
+  `11か国のマーケットプレイスを毎分、新着順にチェックします。Vintedのカタログにはポーランド、ハンガリー、ルーマニア、クロアチア、スロベニアの出品も含まれます。Facebook Marketplace、あなたのFacebookグループ、eBay.com、Chrono24はどこにいても使えます。`);
+add('alt.map', null, `Mapa: pokryté jsou Česko, Slovensko, Polsko, Německo, Rakousko, Dánsko, Norsko, Švédsko, Finsko, USA a Japonsko; Vinted přidává Maďarsko, Rumunsko, Chorvatsko a Slovinsko`, `Karte: abgedeckt sind Tschechien, Slowakei, Polen, Deutschland, Österreich, Dänemark, Norwegen, Schweden, Finnland, USA und Japan; Vinted ergänzt Ungarn, Rumänien, Kroatien und Slowenien`, `地図：チェコ、スロバキア、ポーランド、ドイツ、オーストリア、デンマーク、ノルウェー、スウェーデン、フィンランド、米国、日本が対象。Vintedでハンガリー、ルーマニア、クロアチア、スロベニアも`);
 add('news.freeH', null, `5 hlídačů zdarma`, `5 kostenlose Suchaufträge`, `無料ウォッチ5件`);
 add('news.freeP', null, `Během zkušebního období nebo pozvánky zdarma je 5 hlídačů zdarma. Každý další stojí od 5 € týdně — každý hlídač se prohledává každou minutu na každém svém zdroji. Když dojdou peníze, pozastaví se jen ty navíc.`,
   `Während der Testphase oder einer kostenlosen Einladung sind 5 Suchaufträge kostenlos. Jeder weitere kostet ab 5 €/Woche — jeder Suchauftrag wird jede Minute auf jeder seiner Quellen durchsucht. Ist das Guthaben leer, pausieren nur die zusätzlichen.`,

@@ -47,6 +47,24 @@
   @media (max-width: 560px) { .top { flex-wrap: wrap; row-gap: 8px; } }
   :root[lang="ja"] .hero h1 { max-width: none; font-size: clamp(28px, 5vw, 44px); }   /* 14ch fits ~7 kanji; keep the line whole */
   @media (max-width: 480px) { .hero { padding: 36px 0 28px; } }
+/* 0.24.3: from listing to alert */
+.flow { display: grid; grid-template-columns: 120px repeat(4, 1fr); gap: 0 14px; margin-top: 18px; }
+.flow .lane { font-size: 12px; font-weight: 800; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); padding-top: 26px; }
+.flow .st { position: relative; padding: 30px 0 0; border-top: 4px solid var(--accent); }
+.flow .st::before { content: ""; position: absolute; top: -10px; left: 0; width: 16px; height: 16px; background: var(--accent); }
+.flow .st b { display: block; font-size: 15px; } .flow .st small { display: block; font-size: 12px; font-weight: 800; color: var(--accent); margin-bottom: 2px; }
+.flow .st p { margin: 4px 0 0; font-size: 14px; color: var(--muted); }
+.flow .slow { grid-column: 2 / 6; position: relative; margin-top: 26px; padding: 30px 0 0; border-top: 4px dashed var(--n-300); text-align: right; }
+.flow .slow b { font-size: 15px; } .flow .slow p { margin: 4px 0 0; font-size: 14px; color: var(--muted); }
+.flow .slow::after { content: ""; position: absolute; top: -10px; right: 0; width: 16px; height: 16px; background: var(--n-300); }
+.flowx { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 28px; align-items: start; }
+.tgmsg { background: var(--surface); border-left: 4px solid var(--accent); padding: 12px 14px; font-size: 14px; line-height: 1.5; overflow-wrap: anywhere; }
+.tgmsg b { font-weight: 800; } .tgmsg .u { color: var(--accent); }
+.engines { display: grid; grid-template-columns: 1fr 1fr; border: 2px solid var(--divider); }
+.engines > div { padding: 12px 14px; } .engines > div + div { border-left: 2px solid var(--divider); }
+.engines h4 { margin: 0 0 4px; font-size: 15px; } .engines p { margin: 0; font-size: 13px; color: var(--muted); }
+@media (max-width: 760px) { .flow { grid-template-columns: 1fr; gap: 14px; } .flow .lane { padding-top: 6px; } .flow .slow { grid-column: auto; text-align: left; }
+  .flow .slow::after { right: auto; left: 0; } .flowx, .engines { grid-template-columns: 1fr; } .engines > div + div { border-left: 0; border-top: 2px solid var(--divider); } }
 </style>
 <script>
   // light by default; remembered per browser
@@ -102,12 +120,35 @@
     </figure>
   </div>
 
+  <section id="flow">
+      <h2 data-i18n="flow.h">From listing to alert</h2>
+      <div class="flow">
+        <div class="lane" data-i18n="flow.you">With Deal Radar</div>
+        <div class="st"><small>0:00</small><b data-i18n="flow.s1h">Listed</b><p data-i18n="flow.s1p">A seller posts a G-Shock on Vinted.</p></div>
+        <div class="st"><small data-i18n="flow.s2t">1–3 min</small><b data-i18n="flow.s2h">Found</b><p data-i18n="flow.s2p">Deal Radar's next check sees it: every minute on most sites, every 3 minutes on Vinted and Facebook.</p></div>
+        <div class="st"><small data-i18n="flow.s3t">+ seconds</small><b data-i18n="flow.s3h">Telegram alert</b><p data-i18n="flow.s3p">Title, price in your currency and the link — on your phone.</p></div>
+        <div class="st"><small data-i18n="flow.s4t">you</small><b data-i18n="flow.s4h">Message the seller</b><p data-i18n="flow.s4p">The listing still says “listed a minute ago”.</p></div>
+        <div class="lane" data-i18n="flow.hand">Checking by hand</div>
+        <div class="slow"><b data-i18n="flow.slowH">Whenever you next refresh</b><p data-i18n="flow.slowP">Often after someone else has already written to the seller.</p></div>
+      </div>
+      <div class="flowx">
+        <div><div class="kicker" data-i18n="flow.realK">A real alert, 21 October</div>
+          <div class="tgmsg"><b>Casio G-Shock</b><br>Zegarek Casio GShock WR 20Bar · G-Shock<br>2 534 CZK · vinted<br><span class="u">https://www.vinted.cz/items/…</span></div>
+          <p class="meta" data-i18n="flow.realP">A Polish seller on Vinted, price converted to CZK. When the alert was opened, the listing said “listed a minute ago”.</p></div>
+        <div><div class="kicker" data-i18n="flow.engK">Who checks what</div>
+          <div class="engines">
+            <div><h4 data-i18n="flow.srvH">The server</h4><p data-i18n="flow.srvP">Every minute, your computer can be off. Bazoš, Aukro, Sbazar, Vinted, Allegro, OLX, Kleinanzeigen, eBay, willhaben, FINN, Blocket, Tori, DBA.</p></div>
+            <div><h4 data-i18n="flow.extH">Your browser</h4><p data-i18n="flow.extP">The extension, while the browser is open. FB Marketplace, FB groups, Craigslist, Mercari JP, Chrono24.</p></div>
+          </div></div>
+      </div>
+    </section>
+
   <section id="coverage">
     <h2 data-i18n="cov.h2">Where Deal Radar looks</h2>
-    <p data-i18n="cov.p">Marketplaces in 11 countries are checked every minute, newest first. Facebook Marketplace, your Facebook groups, eBay.com and Chrono24 work wherever you are.</p>
+    <p data-i18n="cov.p">Marketplaces in 11 countries are checked every minute, newest first. Vinted's catalog adds listings from Poland, Hungary, Romania, Croatia and Slovenia. Facebook Marketplace, your Facebook groups, eBay.com and Chrono24 work wherever you are.</p>
     <figure>
-      <img class="shot l" src="img/coverage.svg" alt="Map: Czechia, Slovakia, Poland, Germany, Austria, Denmark, Norway, Sweden, Finland, the USA and Japan are covered" data-i18n-attr="alt:alt.map" width="1200" height="960" loading="lazy">
-      <img class="shot d" src="img/coverage-dark.svg" alt="Map: Czechia, Slovakia, Poland, Germany, Austria, Denmark, Norway, Sweden, Finland, the USA and Japan are covered" data-i18n-attr="alt:alt.map" width="1200" height="960" loading="lazy">
+      <img class="shot l" src="img/coverage.svg" alt="Map: Czechia, Slovakia, Poland, Germany, Austria, Denmark, Norway, Sweden, Finland, the USA and Japan are covered; Vinted adds Hungary, Romania, Croatia and Slovenia" data-i18n-attr="alt:alt.map" width="1200" height="960" loading="lazy">
+      <img class="shot d" src="img/coverage-dark.svg" alt="Map: Czechia, Slovakia, Poland, Germany, Austria, Denmark, Norway, Sweden, Finland, the USA and Japan are covered; Vinted adds Hungary, Romania, Croatia and Slovenia" data-i18n-attr="alt:alt.map" width="1200" height="960" loading="lazy">
     </figure>
   </section>
 

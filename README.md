@@ -24,7 +24,7 @@
 | Bazoš CZ | <img src="docs/img/flags/cz.svg" alt="CZ" height="12"> | server |
 | Aukro | <img src="docs/img/flags/cz.svg" alt="CZ" height="12"> | server |
 | Sbazar | <img src="docs/img/flags/cz.svg" alt="CZ" height="12"> | server |
-| Vinted | <img src="docs/img/flags/cz.svg" alt="CZ" height="12"> | server |
+| Vinted | <img src="docs/img/flags/cz.svg" alt="CZ" height="12"> | server; vinted.cz also lists items from Poland, Hungary, Romania, Croatia and Slovenia |
 | Allegro.cz | <img src="docs/img/flags/cz.svg" alt="CZ" height="12"> | server |
 | Bazoš SK | <img src="docs/img/flags/sk.svg" alt="SK" height="12"> | server |
 | OLX.pl | <img src="docs/img/flags/pl.svg" alt="PL" height="12"> | server |
@@ -51,6 +51,7 @@
 
 ## What's new
 
+- **From listing to alert.** radar.4xs.dev, the project page and this README show the path step by step, with a real Vinted alert. Vinted's catalog turns out to include Poland, Hungary, Romania, Croatia and Slovenia; the map shows them, and the editor suggests model numbers as keywords.
 - **5 free watches.** During the free trial or a free invite, 5 watches are free (an invite can give more). Each one beyond costs from €5/week — every watch is searched every minute on each of its sources. If the wallet runs out, only those extra watches pause.
 - **Smoother start.** Open the invite link or paste it into the extension — either order works. The app warns when Telegram can't reach you (Start not pressed) and has a Test button, and every watch shows when it was last checked.
 - **Coverage map.** Marketplaces in 11 countries, plus FB, eBay.com and Chrono24 anywhere — see the map above. New screenshots too.
@@ -62,6 +63,28 @@
 - **Germany and Austria.** willhaben.at, Kleinanzeigen.de, eBay.de and eBay.at join the sources. Like Bazoš or OLX, the server checks them every minute, newest first.
 - **Prices in your currency.** Pick CZK, EUR, PLN or USD. Alerts show the listing's own price and yours — “850 PLN (≈ 201 EUR)” — and you set a watch's min and max price in your currency.
 - **Four languages.** The extension, radar.4xs.dev and the [project page](https://kotyzap.github.io/Deal-Radar/) speak English, Czech, German and Japanese. They follow your browser; switch in the header.
+
+## From listing to alert
+
+| | With Deal Radar | Checking by hand |
+|---|---|---|
+| **0:00** | A seller posts a G-Shock on Vinted. | |
+| **1–3 min** | Deal Radar's next check finds it — every minute on most sites, every 3 minutes on Vinted and Facebook. | |
+| **+ seconds** | Telegram alert: title, price in your currency, link. | |
+| **You** | Message the seller while the listing still says “listed a minute ago”. | Whenever you next refresh — often after someone else has already written. |
+
+A real alert from 21 October (a Polish seller on Vinted, price converted to CZK; the listing said “listed a minute ago” when the alert was opened):
+
+> **Casio G-Shock**<br>
+> Zegarek Casio GShock WR 20Bar · G-Shock<br>
+> 2 534 CZK · vinted<br>
+> https://www.vinted.cz/items/…
+
+| The server | Your browser |
+|---|---|
+| Every minute, your computer can be off: Bazoš, Aukro, Sbazar, Vinted, Allegro, OLX, Kleinanzeigen, eBay, willhaben, FINN, Blocket, Tori, DBA. | The extension, while the browser is open: FB Marketplace, FB groups, Craigslist, Mercari JP, Chrono24. |
+
+Use model numbers as keywords (GA-2100, 18-400): Vinted and FB groups show listings in Polish, Hungarian, Romanian and more, and a model number matches in every language.
 
 ## How it works
 
