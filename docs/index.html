@@ -29,7 +29,7 @@
   .steps li::before { counter-increment: s; content: counter(s, decimal-leading-zero); font-weight: 800; font-size: 22px; color: var(--accent); }
   .sources { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
   .sources .tag { display: inline-flex; align-items: center; gap: 6px; }
-  .flags { display: inline-flex; gap: 2px; } .flags img { display: block; width: 16px; height: 12px; outline: 1px solid var(--divider); outline-offset: -1px; }
+  .flags { display: inline-flex; gap: 2px; } .globe { font-size: 14px; line-height: 12px; } .flags img { display: block; width: 16px; height: 12px; outline: 1px solid var(--divider); outline-offset: -1px; }
   .shot { display: block; width: 100%; height: auto; border: 2px solid var(--divider); margin-top: 18px; }
   .shot.d { display: none; }
   :root[data-theme="dark"] .shot.l { display: none; } :root[data-theme="dark"] .shot.d { display: block; }
@@ -74,21 +74,21 @@
     </div>
     <p class="invite" data-i18n="hero.invite">Deal Radar is in a private pilot. There is no public download: the browser extension is shared directly with invited users.</p>
     <div class="sources">
-      <span class="tag"><i class="flags"><img src="img/flags/cz.svg" alt="CZ" width="16" height="12"><img src="img/flags/sk.svg" alt="SK" width="16" height="12"><img src="img/flags/pl.svg" alt="PL" width="16" height="12"><img src="img/flags/de.svg" alt="DE" width="16" height="12"><img src="img/flags/at.svg" alt="AT" width="16" height="12"></i>FB Marketplace</span>
-      <span class="tag"><i class="flags"><img src="img/flags/cz.svg" alt="CZ" width="16" height="12"><img src="img/flags/sk.svg" alt="SK" width="16" height="12"><img src="img/flags/pl.svg" alt="PL" width="16" height="12"><img src="img/flags/de.svg" alt="DE" width="16" height="12"><img src="img/flags/at.svg" alt="AT" width="16" height="12"></i><span data-i18n="src.fbGroups">FB groups</span></span>
-      <span class="tag"><i class="flags"><img src="img/flags/cz.svg" alt="CZ" width="16" height="12"></i>Bazoš CZ</span>
-      <span class="tag"><i class="flags"><img src="img/flags/sk.svg" alt="SK" width="16" height="12"></i>Bazoš SK</span>
-      <span class="tag"><i class="flags"><img src="img/flags/cz.svg" alt="CZ" width="16" height="12"></i>Aukro</span>
-      <span class="tag"><i class="flags"><img src="img/flags/cz.svg" alt="CZ" width="16" height="12"></i>Sbazar</span>
-      <span class="tag"><i class="flags"><img src="img/flags/cz.svg" alt="CZ" width="16" height="12"></i>Vinted</span>
-      <span class="tag"><i class="flags"><img src="img/flags/pl.svg" alt="PL" width="16" height="12"></i>OLX.pl</span>
-      <span class="tag"><i class="flags"><img src="img/flags/cz.svg" alt="CZ" width="16" height="12"></i>Allegro.cz</span>
-      <span class="tag"><i class="flags"><img src="img/flags/at.svg" alt="AT" width="16" height="12"></i>willhaben.at</span>
-      <span class="tag"><i class="flags"><img src="img/flags/de.svg" alt="DE" width="16" height="12"></i>Kleinanzeigen.de</span>
-      <span class="tag"><i class="flags"><img src="img/flags/de.svg" alt="DE" width="16" height="12"></i>eBay.de</span>
-      <span class="tag"><i class="flags"><img src="img/flags/at.svg" alt="AT" width="16" height="12"></i>eBay.at</span>
-      <span class="tag"><i class="flags"><img src="img/flags/us.svg" alt="US" width="16" height="12"></i>eBay.com</span>
-      <span class="tag"><i class="flags"><img src="img/flags/us.svg" alt="US" width="16" height="12"></i>Craigslist</span>
+      <span class="tag" data-c="global"><i class="flags"><span class="globe" role="img" aria-label="Global" title="Global">🌎</span></i>FB Marketplace</span>
+      <span class="tag" data-c="global"><i class="flags"><span class="globe" role="img" aria-label="Global" title="Global">🌎</span></i><span data-i18n="src.fbGroups">FB groups</span></span>
+      <span class="tag" data-c="global"><i class="flags"><span class="globe" role="img" aria-label="Global" title="Global">🌎</span></i>eBay.com</span>
+      <span class="tag" data-c="cz"><i class="flags"><img src="img/flags/cz.svg" alt="CZ" width="16" height="12"></i>Bazoš CZ</span>
+      <span class="tag" data-c="cz"><i class="flags"><img src="img/flags/cz.svg" alt="CZ" width="16" height="12"></i>Aukro</span>
+      <span class="tag" data-c="cz"><i class="flags"><img src="img/flags/cz.svg" alt="CZ" width="16" height="12"></i>Sbazar</span>
+      <span class="tag" data-c="cz"><i class="flags"><img src="img/flags/cz.svg" alt="CZ" width="16" height="12"></i>Vinted</span>
+      <span class="tag" data-c="cz"><i class="flags"><img src="img/flags/cz.svg" alt="CZ" width="16" height="12"></i>Allegro.cz</span>
+      <span class="tag" data-c="sk"><i class="flags"><img src="img/flags/sk.svg" alt="SK" width="16" height="12"></i>Bazoš SK</span>
+      <span class="tag" data-c="pl"><i class="flags"><img src="img/flags/pl.svg" alt="PL" width="16" height="12"></i>OLX.pl</span>
+      <span class="tag" data-c="de"><i class="flags"><img src="img/flags/de.svg" alt="DE" width="16" height="12"></i>Kleinanzeigen.de</span>
+      <span class="tag" data-c="de"><i class="flags"><img src="img/flags/de.svg" alt="DE" width="16" height="12"></i>eBay.de</span>
+      <span class="tag" data-c="at"><i class="flags"><img src="img/flags/at.svg" alt="AT" width="16" height="12"></i>willhaben.at</span>
+      <span class="tag" data-c="at"><i class="flags"><img src="img/flags/at.svg" alt="AT" width="16" height="12"></i>eBay.at</span>
+      <span class="tag" data-c="us"><i class="flags"><img src="img/flags/us.svg" alt="US" width="16" height="12"></i>Craigslist</span>
     </div>
     <figure>
       <img class="shot l" src="img/watches.png" alt="Deal Radar watches list with keywords, price ceiling, sources and bid" data-i18n-attr="alt:alt.watches" width="1200" height="860">
@@ -218,21 +218,18 @@
   };
   label();
 
-  // 0.20.0 Locality: the visitor's country from their IP (radar.4xs.dev/api/geo, Cloudflare), else from the browser language,
-  // like the language picker. Sources of that country move to the front, and so does its flag on multi-country sources (FB).
+  // 0.20.2 Locality: global services (🌎) first, then the visitor's country and its neighbours, e.g. a German PC sees
+  // Facebook, then DE and AT, then PL, CZ, SK, then US. The country comes from the browser language (cs, sk, pl, de; de-AT → AT);
+  // an English or other browser uses the IP (radar.4xs.dev/api/geo, Cloudflare). Unknown → the default order in the HTML.
   (async () => {
-    const box = document.querySelector('.sources'), tags = [...box.querySelectorAll('.tag')];
-    const known = new Set(tags.flatMap(t => [...t.querySelectorAll('img')].map(i => i.alt.toLowerCase())));
-    let c = null;
-    try { c = ((await (await fetch('https://radar.4xs.dev/api/geo', { signal: AbortSignal.timeout(2500) })).json()).country || '').toLowerCase(); } catch {}
-    if (!known.has(c)) {
-      const byLang = { cs: 'cz', sk: 'sk', pl: 'pl', de: 'de' };
-      c = (navigator.languages || [navigator.language]).map(l => { const [lang, reg = ''] = l.toLowerCase().split('-'); return known.has(reg) ? reg : byLang[lang]; }).find(Boolean);
-    }
-    if (!c) return;
-    const local = tags.filter(t => t.querySelector(`img[alt="${c.toUpperCase()}"]`));
-    for (const t of local) { const f = t.querySelector('.flags'); f.prepend(f.querySelector(`img[alt="${c.toUpperCase()}"]`)); }
-    box.prepend(...local);
+    const ORDER = { cz: ['cz', 'sk', 'pl', 'de', 'at', 'us'], sk: ['sk', 'cz', 'pl', 'at', 'de', 'us'], pl: ['pl', 'cz', 'sk', 'de', 'at', 'us'],
+      de: ['de', 'at', 'pl', 'cz', 'sk', 'us'], at: ['at', 'de', 'cz', 'sk', 'pl', 'us'], us: ['us', 'de', 'at', 'pl', 'cz', 'sk'] };
+    const byLang = { cs: 'cz', sk: 'sk', pl: 'pl', de: 'de' };
+    let c = (navigator.languages || [navigator.language]).map(l => { const [lang, reg = ''] = l.toLowerCase().split('-'); return byLang[lang] && (ORDER[reg] && reg !== 'us' ? reg : byLang[lang]); }).find(Boolean);
+    if (!c) try { c = ((await (await fetch('https://radar.4xs.dev/api/geo', { signal: AbortSignal.timeout(2500) })).json()).country || '').toLowerCase(); } catch {}
+    if (!ORDER[c]) return;
+    const box = document.querySelector('.sources'), rank = t => t.dataset.c === 'global' ? -1 : ORDER[c].indexOf(t.dataset.c);
+    box.append(...[...box.querySelectorAll('.tag')].map((t, i) => [t, i]).sort((x, y) => rank(x[0]) - rank(y[0]) || x[1] - y[1]).map(x => x[0]));
     box.dataset.locality = c;
   })();
 </script>

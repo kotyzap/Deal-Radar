@@ -17,20 +17,20 @@
 
 | Source | Country | Checked by |
 |---|---|---|
-| FB Marketplace | <img src="docs/img/flags/cz.svg" alt="CZ" height="12"> <img src="docs/img/flags/sk.svg" alt="SK" height="12"> <img src="docs/img/flags/pl.svg" alt="PL" height="12"> <img src="docs/img/flags/de.svg" alt="DE" height="12"> <img src="docs/img/flags/at.svg" alt="AT" height="12"> | browser extension, around your location (default Prague + 500 km) |
-| FB groups | <img src="docs/img/flags/cz.svg" alt="CZ" height="12"> <img src="docs/img/flags/sk.svg" alt="SK" height="12"> <img src="docs/img/flags/pl.svg" alt="PL" height="12"> <img src="docs/img/flags/de.svg" alt="DE" height="12"> <img src="docs/img/flags/at.svg" alt="AT" height="12"> | browser extension, groups you joined |
+| FB Marketplace | 🌎 | browser extension, around your location (default Prague + 500 km) |
+| FB groups | 🌎 | browser extension, groups you joined |
+| eBay.com | 🌎 | server, US sellers only |
 | Bazoš CZ | <img src="docs/img/flags/cz.svg" alt="CZ" height="12"> | server |
-| Bazoš SK | <img src="docs/img/flags/sk.svg" alt="SK" height="12"> | server |
 | Aukro | <img src="docs/img/flags/cz.svg" alt="CZ" height="12"> | server |
 | Sbazar | <img src="docs/img/flags/cz.svg" alt="CZ" height="12"> | server |
 | Vinted | <img src="docs/img/flags/cz.svg" alt="CZ" height="12"> | server |
-| OLX.pl | <img src="docs/img/flags/pl.svg" alt="PL" height="12"> | server |
 | Allegro.cz | <img src="docs/img/flags/cz.svg" alt="CZ" height="12"> | server |
-| willhaben.at | <img src="docs/img/flags/at.svg" alt="AT" height="12"> | server |
+| Bazoš SK | <img src="docs/img/flags/sk.svg" alt="SK" height="12"> | server |
+| OLX.pl | <img src="docs/img/flags/pl.svg" alt="PL" height="12"> | server |
 | Kleinanzeigen.de | <img src="docs/img/flags/de.svg" alt="DE" height="12"> | server |
 | eBay.de | <img src="docs/img/flags/de.svg" alt="DE" height="12"> | server |
+| willhaben.at | <img src="docs/img/flags/at.svg" alt="AT" height="12"> | server |
 | eBay.at | <img src="docs/img/flags/at.svg" alt="AT" height="12"> | server |
-| eBay.com | <img src="docs/img/flags/us.svg" alt="US" height="12"> | server, US sellers only |
 | Craigslist | <img src="docs/img/flags/us.svg" alt="US" height="12"> | browser extension, up to 5 cities per watch |
 
 <picture>
