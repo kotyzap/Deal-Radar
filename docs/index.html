@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Deal Radar — be the first to message the seller</title>
-<meta name="description" content="Deal Radar watches Bazoš, Aukro, Sbazar, Vinted, OLX.pl, Allegro.cz and Facebook Marketplace for the things collectors hunt and sends a Telegram alert within a minute of a new listing.">
+<meta name="description" content="Deal Radar watches Facebook Marketplace and your Facebook groups, plus Bazoš, Aukro, Sbazar, Vinted, OLX.pl and Allegro.cz, for the things collectors hunt and sends a Telegram alert within a minute of a new listing.">
 <link rel="icon" href="img/favicon-32.png" sizes="32x32">
 <link rel="apple-touch-icon" href="img/icon-512.png">
 <link rel="stylesheet" href="modernist.css">
@@ -35,6 +35,7 @@
   .fb .cols { grid-template-columns: 1fr; gap: 18px; }
   .fb .shot { margin-top: 0; }
   @media (max-width: 720px) { .fb { grid-template-columns: 1fr; } .fb figure { max-width: 340px; } }
+  .invite { font-size: 14px; color: var(--muted); margin: 14px 0 0; max-width: 60ch; }
   .plan { font-size: 32px; font-weight: 800; letter-spacing: -.015em; }
   .plan small { font-size: 15px; font-weight: 400; color: var(--muted); }
   footer { padding: 28px 0 48px; color: var(--muted); font-size: 14px; }
@@ -57,15 +58,17 @@
 <main class="wrap">
 
   <div class="hero">
+    <div class="kicker">Private beta · invite only</div>
     <h1>Be the first to message the seller.</h1>
-    <p class="lead">Deal Radar watches Czech, Slovak and EU marketplaces for the things you collect and pings you on Telegram within a minute of a new listing — before the deal is gone.</p>
+    <p class="lead">Deal Radar watches Facebook Marketplace and your Facebook groups — plus Bazoš, Aukro, Vinted, OLX and Allegro — and pings you on Telegram within a minute of a new listing, before the deal is gone.</p>
     <div class="cta">
-      <a class="btn primary" href="https://radar.4xs.dev">Open radar.4xs.dev</a>
-      <a class="btn" href="#how">How it works</a>
+      <a class="btn primary" href="#how">How it works</a>
+      <a class="btn" href="https://github.com/kotyzap/deal-radar">View on GitHub</a>
     </div>
+    <p class="invite">Deal Radar is in a private pilot. There is no public download: the browser extension is shared directly with invited users.</p>
     <div class="sources">
-      <span class="tag">Bazoš CZ</span><span class="tag">Bazoš SK</span><span class="tag">Aukro</span>
-      <span class="tag">Sbazar</span><span class="tag">Vinted</span><span class="tag">OLX.pl</span><span class="tag">Allegro.cz</span><span class="tag">FB Marketplace</span>
+      <span class="tag">FB Marketplace</span><span class="tag">FB groups</span><span class="tag">Bazoš CZ</span><span class="tag">Bazoš SK</span><span class="tag">Aukro</span>
+      <span class="tag">Sbazar</span><span class="tag">Vinted</span><span class="tag">OLX.pl</span><span class="tag">Allegro.cz</span>
     </div>
     <figure>
       <img class="shot l" src="img/watches.png" alt="Deal Radar watches list with keywords, price ceiling, sources and bid" width="1200" height="860">
@@ -76,25 +79,26 @@
   <section id="how">
     <h2>How it works</h2>
     <ol class="steps">
-      <li><div><b>Log in with Telegram.</b> No password, no e-mail. Alerts arrive in the same Telegram account.</div></li>
-      <li><div><b>Create a watch.</b> Keywords that must appear, keywords that must not, a price ceiling in CZK (listings in EUR or PLN are converted at the daily ČNB rate), and the sources to watch. A 7-day preview shows what it would have caught.</div></li>
+      <li><div><b>Get an invite.</b> You receive the Deal Radar extension for Chrome or Firefox directly — it isn't in any public store.</div></li>
+      <li><div><b>Log in with Telegram</b> from the extension (popup → Watches). No password, no e-mail. Alerts arrive in the same Telegram account.</div></li>
+      <li><div><b>Create a watch.</b> Keywords that must appear, keywords that must not, a minimum and maximum price in CZK (listings in EUR or PLN are converted at the daily ČNB rate), the sources and, for Facebook, the groups to search. A 7-day preview shows what it would have caught.</div></li>
       <li><div><b>Get the alert.</b> Every source is polled once a minute. A new listing that matches lands in Telegram with title, price and link — you message the seller.</div></li>
       <li><div><b>Vote Good or Junk.</b> One tap per alert tells the radar how well a watch is tuned.</div></li>
     </ol>
     <figure>
-      <img class="shot l" src="img/editor.png" alt="Watch editor with a 7-day preview of matching listings" width="1200" height="1048" loading="lazy">
-      <img class="shot d" src="img/editor-dark.png" alt="Watch editor, dark theme" width="1200" height="1044" loading="lazy">
-      <figcaption>The editor shows what the watch would have caught in the last 7 days.</figcaption>
+      <img class="shot l" src="img/editor.png" alt="Watch editor with min and max price, sources, FB groups and a 7-day preview of matching listings" width="1200" height="1339" loading="lazy">
+      <img class="shot d" src="img/editor-dark.png" alt="Watch editor, dark theme" width="1200" height="1339" loading="lazy">
+      <figcaption>The editor: price range, sources, the watch's FB groups, and what it would have caught in the last 7 days.</figcaption>
     </figure>
     <figure>
       <img class="shot l" src="img/alerts.png" alt="Alerts list with prices, sources and Good / Junk votes" width="1200" height="860" loading="lazy">
       <img class="shot d" src="img/alerts-dark.png" alt="Alerts list, dark theme" width="1200" height="860" loading="lazy">
-      <figcaption>Every alert also goes to Telegram. “#1 of 3” = you heard first among three bidders.</figcaption>
+      <figcaption>Every alert also goes to Telegram. “#1 of 3” = you heard first among three bidders; “#2 of 2” = someone outbid you and heard a minute earlier.</figcaption>
     </figure>
   </section>
 
   <section id="fb">
-    <h2>Facebook Marketplace, in your own browser</h2>
+    <h2>Facebook Marketplace and groups, in your own browser</h2>
     <div class="fb">
     <div class="cols">
       <div>
@@ -102,8 +106,16 @@
         <p>FB has no public search API, so the extension checks your searches from your normal, logged-in Chrome or Firefox — one pinned tab, every ~3 minutes, newest first, Prague + 500 km.</p>
       </div>
       <div>
+        <h3>Your FB groups</h3>
+        <p>Many deals are posted only in collector groups. On the FB groups tab you tick up to 10 groups you've joined; each watch then picks which of them to search. The extension runs Facebook's own search inside each group for the watch's keywords, newest posts first, about every 10 minutes.</p>
+      </div>
+      <div>
+        <h3>Only offers, only for you</h3>
+        <p>A group post alerts only if it looks like an offer — a price or a sale word (prodám, na prodej, cenu nabídněte, sprzedam…) and no “wanted” word (koupím, hledám, kupię…). Group posts are private: they alert only the person whose browser found them, never go into the shared index and aren't part of the bidding.</p>
+      </div>
+      <div>
         <h3>Nothing leaves but listings</h3>
-        <p>The extension pushes only the cards it sees (title, price, link) to the radar. Your Facebook session stays in your browser.</p>
+        <p>The extension pushes only the cards and posts it sees (title, price, link) to the radar. Your Facebook session stays in your browser.</p>
       </div>
       <div>
         <h3>Other sources need no extension</h3>
@@ -111,11 +123,16 @@
       </div>
     </div>
     <figure>
-      <img class="shot l" src="img/popup.png" alt="Extension popup: FB searches, last check, latest alerts" width="340" height="528" loading="lazy">
-      <img class="shot d" src="img/popup-dark.png" alt="Extension popup, dark theme" width="340" height="528" loading="lazy">
+      <img class="shot l" src="img/popup.png" alt="Extension popup: FB Marketplace and group searches, last check, latest alerts" width="340" height="582" loading="lazy">
+      <img class="shot d" src="img/popup-dark.png" alt="Extension popup, dark theme" width="340" height="582" loading="lazy">
       <figcaption>Extension popup.</figcaption>
     </figure>
     </div>
+    <figure>
+      <img class="shot l" src="img/groups.png" alt="FB groups tab: tick up to 10 joined groups that watches may search" width="1200" height="620" loading="lazy">
+      <img class="shot d" src="img/groups-dark.png" alt="FB groups tab, dark theme" width="1200" height="620" loading="lazy">
+      <figcaption>FB groups tab: tick the groups Deal Radar may search; each watch picks from these.</figcaption>
+    </figure>
   </section>
 
   <section id="pricing">
@@ -142,13 +159,13 @@
 
   <section id="status">
     <h2>Status</h2>
-    <p>Private pilot — login is by invite. Built on Cloudflare Workers + D1, Telegram Login and a Chrome/Firefox extension. Source and changelog on <a href="https://github.com/kotyzap/deal-radar">GitHub</a>.</p>
+    <p>Private beta — invite only. No public download: the extension is shared directly with pilot users, and only invited Telegram accounts can log in. Built on Cloudflare Workers + D1, Telegram Login and a Chrome/Firefox extension. Source and changelog on <a href="https://github.com/kotyzap/deal-radar">GitHub</a>.</p>
   </section>
 
 </main>
 
 <footer class="wrap">
-  <a href="https://4xs.dev">4xs.dev</a> · Pavel Kotyza · <a href="https://radar.4xs.dev">radar.4xs.dev</a> · <a href="https://ko-fi.com/pavelk">Ko-fi</a>
+  <a href="https://4xs.dev">4xs.dev</a> · Pavel Kotyza · <a href="https://github.com/kotyzap/deal-radar">GitHub</a> · <a href="https://ko-fi.com/pavelk">Ko-fi</a>
 </footer>
 
 <script>
