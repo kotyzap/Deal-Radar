@@ -70,9 +70,9 @@ add('flow.realK', null, `Skutečné upozornění, 21. října`, `Eine echte Bena
 add('flow.realP', null, `Prodejce z Polska na Vintedu, cena převedená na Kč. Když se upozornění otevřelo, inzerát ukazoval „vystaveno před minutou“.`, `Ein polnischer Verkäufer auf Vinted, Preis in CZK umgerechnet. Beim Öffnen der Benachrichtigung zeigte das Inserat „vor einer Minute eingestellt“.`, `Vintedのポーランドの出品者、価格はCZKに換算。通知を開いたとき、出品には「1分前に出品」と表示されていました。`);
 add('flow.engK', null, `Kdo co kontroluje`, `Wer was prüft`, `チェックの担当`);
 add('flow.srvH', null, `Server`, `Der Server`, `サーバー`);
-add('flow.srvP', null, `Každou minutu, počítač může být vypnutý. Bazoš, Aukro, Sbazar, Vinted, Allegro, OLX, Kleinanzeigen, eBay, willhaben, FINN, Blocket, Tori, DBA.`, `Jede Minute, Ihr Computer darf aus sein. Bazoš, Aukro, Sbazar, Vinted, Allegro, OLX, Kleinanzeigen, eBay, willhaben, FINN, Blocket, Tori, DBA.`, `毎分。パソコンの電源は切れていても大丈夫。Bazoš、Aukro、Sbazar、Vinted、Allegro、OLX、Kleinanzeigen、eBay、willhaben、FINN、Blocket、Tori、DBA。`);
+add('flow.srvP', null, `Každou minutu, počítač může být vypnutý. Bazoš, Aukro, Sbazar, Vinted, OLX, Kleinanzeigen, willhaben, FINN, Blocket, Tori, DBA.`, `Jede Minute, Ihr Computer darf aus sein. Bazoš, Aukro, Sbazar, Vinted, OLX, Kleinanzeigen, willhaben, FINN, Blocket, Tori, DBA.`, `毎分。パソコンの電源は切れていても大丈夫。Bazoš、Aukro、Sbazar、Vinted、OLX、Kleinanzeigen、willhaben、FINN、Blocket、Tori、DBA。`);
 add('flow.extH', null, `Váš prohlížeč`, `Ihr Browser`, `あなたのブラウザ`);
-add('flow.extP', null, `Rozšíření, dokud je prohlížeč otevřený. FB Marketplace, FB skupiny, Craigslist, Mercari JP, Chrono24.`, `Die Erweiterung, solange der Browser offen ist. FB Marketplace, FB-Gruppen, Craigslist, Mercari JP, Chrono24.`, `ブラウザが開いている間は拡張機能が担当。FB Marketplace、FBグループ、Craigslist、メルカリ、Chrono24。`);
+add('flow.extP', null, `Rozšíření, dokud je prohlížeč otevřený. FB Marketplace, FB skupiny, Craigslist, Mercari JP, Chrono24, Allegro, eBay.`, `Die Erweiterung, solange der Browser offen ist. FB Marketplace, FB-Gruppen, Craigslist, Mercari JP, Chrono24, Allegro, eBay.`, `ブラウザが開いている間は拡張機能が担当。FB Marketplace、FBグループ、Craigslist、メルカリ、Chrono24、Allegro、eBay。`);
 add('cov.h2', null, `Kde Deal Radar hledá`, `Wo Deal Radar sucht`, `Deal Radarの検索範囲`);
 add('cov.p', null, `Bazary v 11 zemích se kontrolují každou minutu, nejnovější první. Katalog Vintedu přidává inzeráty z Polska, Maďarska, Rumunska, Chorvatska a Slovinska. Facebook Marketplace, vaše facebookové skupiny, eBay.com a Chrono24 fungují, ať jste kdekoli.`,
   `Marktplätze in 11 Ländern werden jede Minute geprüft, die neuesten zuerst. Der Vinted-Katalog bringt Angebote aus Polen, Ungarn, Rumänien, Kroatien und Slowenien dazu. Facebook Marketplace, Ihre Facebook-Gruppen, eBay.com und Chrono24 funktionieren überall.`,
@@ -147,9 +147,9 @@ add('fb.leaveP', null,
   `拡張機能がレーダーに送るのは、見えたカードや投稿（タイトル・価格・リンク）だけです。Facebookのセッションはブラウザ内に留まります。`);
 add('fb.otherH', null, `Ostatní zdroje rozšíření nepotřebují`, `Andere Quellen brauchen keine Erweiterung`, `他のソースは拡張機能不要`);
 add('fb.otherP', null,
-  `Bazoš, Aukro, Sbazar, Vinted, OLX.pl, Allegro.cz, willhaben.at, Kleinanzeigen.de a eBay.de/.at/.com kontroluje přímo server, takže upozornění chodí, i když máte počítač vypnutý.`,
-  `Bazoš, Aukro, Sbazar, Vinted, OLX.pl, Allegro.cz, willhaben.at, Kleinanzeigen.de und eBay.de/.at/.com fragt der Server selbst ab, daher kommen Treffer auch bei ausgeschaltetem Computer.`,
-  `Bazoš、Aukro、Sbazar、Vinted、OLX.pl、Allegro.cz、willhaben.at、Kleinanzeigen.de、eBay.de/.at/.comはサーバー自身がチェックするので、パソコンの電源が切れていても通知は届きます。`);
+  `Bazoš, Aukro, Sbazar, Vinted, OLX.pl, willhaben.at a Kleinanzeigen.de kontroluje přímo server, takže upozornění chodí, i když máte počítač vypnutý.`,
+  `Bazoš, Aukro, Sbazar, Vinted, OLX.pl, willhaben.at und Kleinanzeigen.de fragt der Server selbst ab, daher kommen Treffer auch bei ausgeschaltetem Computer.`,
+  `Bazoš、Aukro、Sbazar、Vinted、OLX.pl、willhaben.at、Kleinanzeigen.deはサーバー自身がチェックするので、パソコンの電源が切れていても通知は届きます。`);
 add('cap.popup', null, `Vyskakovací okno rozšíření.`, `Popup der Erweiterung.`, `拡張機能のポップアップ。`);
 add('cap.groups', null,
   `Karta FB skupiny: zaškrtněte skupiny, které smí Deal Radar prohledávat; každý hlídač si z nich vybírá.`,
