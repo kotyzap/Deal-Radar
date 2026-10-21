@@ -15,9 +15,9 @@ add('meta.title', null, `Deal Radar — napište prodejci jako první`, `Deal Ra
 add('hero.kicker', null, `Soukromá beta · jen na pozvánku`, `Private Beta · nur mit Einladung`, `プライベートベータ・招待制`);
 add('hero.h1', null, `Napište prodejci jako první.`, `Schreiben Sie dem Verkäufer als Erster.`, `誰よりも早く出品者に連絡しよう。`);
 add('hero.lead', null,
-  `Deal Radar hlídá Facebook Marketplace a vaše facebookové skupiny — a k tomu nejlepší bazary v Česku, na Slovensku, v Polsku, Německu a Rakousku — a do minuty od vložení nového inzerátu vám napíše na Telegram, dřív než je nabídka pryč.`,
-  `Deal Radar überwacht Facebook Marketplace und Ihre Facebook-Gruppen — dazu die wichtigsten Marktplätze in Tschechien, der Slowakei, Polen, Deutschland und Österreich — und meldet sich innerhalb einer Minute nach einem neuen Angebot auf Telegram, bevor das Schnäppchen weg ist.`,
-  `Deal RadarはFacebook MarketplaceとあなたのFacebookグループ、さらにチェコ・スロバキア・ポーランド・ドイツ・オーストリアの主要マーケットプレイスを監視し、新しい出品から1分以内、売り切れる前にTelegramで通知します。`);
+  `Deal Radar hlídá Facebook Marketplace a vaše facebookové skupiny — a k tomu nejlepší bazary v Česku, na Slovensku, v Polsku, Německu a Rakousku a eBay.com a Craigslist v USA — a do minuty od vložení nového inzerátu vám napíše na Telegram, dřív než je nabídka pryč.`,
+  `Deal Radar überwacht Facebook Marketplace und Ihre Facebook-Gruppen — dazu die wichtigsten Marktplätze in Tschechien, der Slowakei, Polen, Deutschland und Österreich sowie eBay.com und Craigslist in den USA — und meldet sich innerhalb einer Minute nach einem neuen Angebot auf Telegram, bevor das Schnäppchen weg ist.`,
+  `Deal RadarはFacebook MarketplaceとあなたのFacebookグループ、さらにチェコ・スロバキア・ポーランド・ドイツ・オーストリアの主要マーケットプレイスと米国のeBay.comとCraigslistを監視し、新しい出品から1分以内、売り切れる前にTelegramで通知します。`);
 add('cta.how', null, `Jak to funguje`, `So funktioniert's`, `仕組み`);
 add('cta.github', null, `Zobrazit na GitHubu`, `Auf GitHub ansehen`, `GitHubで見る`);
 add('hero.invite', null,
@@ -47,9 +47,9 @@ add('how.2', null,
   `<b>Mit Telegram anmelden</b> in der Erweiterung (Popup → Suchaufträge). Kein Passwort, keine E-Mail. Treffer kommen im selben Telegram-Konto an.`,
   `拡張機能から<b>Telegramでログイン</b>（ポップアップ → ウォッチ）。パスワードもメールも不要。通知は同じTelegramアカウントに届きます。`);
 add('how.3', null,
-  `<b>Vytvořte hlídač.</b> Klíčová slova, která musí být v názvu, slova, která tam být nesmí, minimální a maximální cena ve vaší měně — CZK, EUR nebo PLN (inzeráty v jiných měnách se přepočítávají denním kurzem ČNB), zdroje a u Facebooku skupiny, které se mají prohledávat. 7denní náhled ukáže, co by zachytil.`,
-  `<b>Suchauftrag anlegen.</b> Stichwörter, die vorkommen müssen, Stichwörter, die nicht vorkommen dürfen, Mindest- und Höchstpreis in Ihrer Währung — CZK, EUR oder PLN (Angebote in anderen Währungen werden zum täglichen ČNB-Kurs umgerechnet), die Quellen und bei Facebook die zu durchsuchenden Gruppen. Eine 7-Tage-Vorschau zeigt, was er gefunden hätte.`,
-  `<b>ウォッチを作成。</b>含めるキーワード、除外するキーワード、あなたの通貨（CZK・EUR・PLN）での最低・最高価格（他の通貨の出品はČNBの日次レートで換算）、ソース、Facebookの場合は検索するグループを指定します。7日間のプレビューで、何が見つかったはずかを確認できます。`);
+  `<b>Vytvořte hlídač.</b> Klíčová slova, která musí být v názvu, slova, která tam být nesmí, minimální a maximální cena ve vaší měně — CZK, EUR, PLN nebo USD (inzeráty v jiných měnách se přepočítávají denním kurzem ČNB), zdroje a u Facebooku skupiny, které se mají prohledávat. 7denní náhled ukáže, co by zachytil.`,
+  `<b>Suchauftrag anlegen.</b> Stichwörter, die vorkommen müssen, Stichwörter, die nicht vorkommen dürfen, Mindest- und Höchstpreis in Ihrer Währung — CZK, EUR, PLN oder USD (Angebote in anderen Währungen werden zum täglichen ČNB-Kurs umgerechnet), die Quellen und bei Facebook die zu durchsuchenden Gruppen. Eine 7-Tage-Vorschau zeigt, was er gefunden hätte.`,
+  `<b>ウォッチを作成。</b>含めるキーワード、除外するキーワード、あなたの通貨（CZK・EUR・PLN・USD）での最低・最高価格（他の通貨の出品はČNBの日次レートで換算）、ソース、Facebookの場合は検索するグループを指定します。7日間のプレビューで、何が見つかったはずかを確認できます。`);
 add('news.h2', null, `Novinky`, `Neuigkeiten`, `最新情報`);
 add('news.deH', null, `Německo a Rakousko`, `Deutschland und Österreich`, `ドイツとオーストリア`);
 add('news.deP', null,
@@ -58,9 +58,9 @@ add('news.deP', null,
   `willhaben.at、Kleinanzeigen.de、eBay.de、eBay.atがソースに加わりました。BazošやOLXと同じく、サーバーが毎分、新しい順にチェックします。`);
 add('news.curH', null, `Ceny ve vaší měně`, `Preise in Ihrer Währung`, `あなたの通貨で価格表示`);
 add('news.curP', null,
-  `Vyberte CZK, EUR nebo PLN. Upozornění ukážou původní cenu inzerátu i cenu ve vaší měně — „850 PLN (≈ 201 EUR)“ — a minimální i maximální cenu hlídače zadáváte ve své měně.`,
-  `Wählen Sie CZK, EUR oder PLN. Treffer zeigen den Originalpreis und Ihren — „850 PLN (≈ 201 EUR)“ — und Mindest- und Höchstpreis eines Suchauftrags geben Sie in Ihrer Währung ein.`,
-  `CZK・EUR・PLNから選べます。通知には出品の元の価格とあなたの通貨での価格（「850 PLN (≈ 201 EUR)」）が表示され、ウォッチの最低・最高価格もあなたの通貨で設定できます。`);
+  `Vyberte CZK, EUR, PLN nebo USD. Upozornění ukážou původní cenu inzerátu i cenu ve vaší měně — „850 PLN (≈ 201 EUR)“ — a minimální i maximální cenu hlídače zadáváte ve své měně.`,
+  `Wählen Sie CZK, EUR, PLN oder USD. Treffer zeigen den Originalpreis und Ihren — „850 PLN (≈ 201 EUR)“ — und Mindest- und Höchstpreis eines Suchauftrags geben Sie in Ihrer Währung ein.`,
+  `CZK・EUR・PLN・USDから選べます。通知には出品の元の価格とあなたの通貨での価格（「850 PLN (≈ 201 EUR)」）が表示され、ウォッチの最低・最高価格もあなたの通貨で設定できます。`);
 add('news.langH', null, `Čtyři jazyky`, `Vier Sprachen`, `4つの言語`);
 add('news.langP', null,
   `Rozšíření, radar.4xs.dev i tato stránka mluví anglicky, česky, německy a japonsky. Řídí se jazykem prohlížeče; přepnout jde v záhlaví.`,
@@ -106,9 +106,9 @@ add('fb.leaveP', null,
   `拡張機能がレーダーに送るのは、見えたカードや投稿（タイトル・価格・リンク）だけです。Facebookのセッションはブラウザ内に留まります。`);
 add('fb.otherH', null, `Ostatní zdroje rozšíření nepotřebují`, `Andere Quellen brauchen keine Erweiterung`, `他のソースは拡張機能不要`);
 add('fb.otherP', null,
-  `Bazoš, Aukro, Sbazar, Vinted, OLX.pl, Allegro.cz, willhaben.at, Kleinanzeigen.de a eBay.de/.at kontroluje přímo server, takže upozornění chodí, i když máte počítač vypnutý.`,
-  `Bazoš, Aukro, Sbazar, Vinted, OLX.pl, Allegro.cz, willhaben.at, Kleinanzeigen.de und eBay.de/.at fragt der Server selbst ab, daher kommen Treffer auch bei ausgeschaltetem Computer.`,
-  `Bazoš、Aukro、Sbazar、Vinted、OLX.pl、Allegro.cz、willhaben.at、Kleinanzeigen.de、eBay.de/.atはサーバー自身がチェックするので、パソコンの電源が切れていても通知は届きます。`);
+  `Bazoš, Aukro, Sbazar, Vinted, OLX.pl, Allegro.cz, willhaben.at, Kleinanzeigen.de a eBay.de/.at/.com kontroluje přímo server, takže upozornění chodí, i když máte počítač vypnutý.`,
+  `Bazoš, Aukro, Sbazar, Vinted, OLX.pl, Allegro.cz, willhaben.at, Kleinanzeigen.de und eBay.de/.at/.com fragt der Server selbst ab, daher kommen Treffer auch bei ausgeschaltetem Computer.`,
+  `Bazoš、Aukro、Sbazar、Vinted、OLX.pl、Allegro.cz、willhaben.at、Kleinanzeigen.de、eBay.de/.at/.comはサーバー自身がチェックするので、パソコンの電源が切れていても通知は届きます。`);
 add('cap.popup', null, `Vyskakovací okno rozšíření.`, `Popup der Erweiterung.`, `拡張機能のポップアップ。`);
 add('cap.groups', null,
   `Karta FB skupiny: zaškrtněte skupiny, které smí Deal Radar prohledávat; každý hlídač si z nich vybírá.`,
