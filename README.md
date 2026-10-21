@@ -5,7 +5,7 @@
 <h1 align="center">Deal Radar</h1>
 
 <h1 align="center"><b>Be the first to message the seller.</b></h1><br>
-<p align="center">Deal Radar watches Facebook Marketplace and your Facebook groups — plus the top marketplaces in Czechia, Slovakia, Poland, Germany and Austria, and eBay.com and Craigslist in the US — and pings you on Telegram within a minute of a new listing, before the deal is gone.</p>
+<p align="center">Deal Radar watches Facebook Marketplace and your Facebook groups — plus the top marketplaces in Czechia, Slovakia, Poland, Germany, Austria, Norway, Sweden, Finland and Denmark, eBay.com and Craigslist in the US, Mercari in Japan and Chrono24 for watches — and pings you on Telegram within a minute of a new listing, before the deal is gone.</p>
 
 <p align="center"><b>Private beta · invite only.</b> No public download — the browser extension is shared directly with invited pilot users.</p>
 
@@ -20,6 +20,7 @@
 | FB Marketplace | 🌎 | browser extension, around your location (default Prague + 500 km) |
 | FB groups | 🌎 | browser extension, groups you joined |
 | eBay.com | 🌎 | server, US sellers only |
+| Chrono24 | 🌎 | browser extension, watches |
 | Bazoš CZ | <img src="docs/img/flags/cz.svg" alt="CZ" height="12"> | server |
 | Aukro | <img src="docs/img/flags/cz.svg" alt="CZ" height="12"> | server |
 | Sbazar | <img src="docs/img/flags/cz.svg" alt="CZ" height="12"> | server |
@@ -32,6 +33,11 @@
 | willhaben.at | <img src="docs/img/flags/at.svg" alt="AT" height="12"> | server |
 | eBay.at | <img src="docs/img/flags/at.svg" alt="AT" height="12"> | server |
 | Craigslist | <img src="docs/img/flags/us.svg" alt="US" height="12"> | browser extension, up to 5 cities per watch |
+| FINN.no | <img src="docs/img/flags/no.svg" alt="NO" height="12"> | server |
+| Blocket.se | <img src="docs/img/flags/se.svg" alt="SE" height="12"> | server |
+| Tori.fi | <img src="docs/img/flags/fi.svg" alt="FI" height="12"> | server |
+| DBA.dk | <img src="docs/img/flags/dk.svg" alt="DK" height="12"> | server |
+| Mercari JP | <img src="docs/img/flags/jp.svg" alt="JP" height="12"> | browser extension; alerts add a Buyee link for buyers outside Japan |
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="docs/img/watches-dark.png">
@@ -40,6 +46,9 @@
 
 ## What's new
 
+- **Scandinavia.** FINN.no, Blocket.se, Tori.fi and DBA.dk join the sources, checked by the server every minute, newest first. Prices in NOK, SEK, EUR and DKK, with your currency next to them.
+- **Chrono24.** The watch marketplace is checked by the browser extension, newest first.
+- **Japan.** Mercari JP, checked by the browser extension. Mercari needs a Japanese phone number, so every Mercari alert also carries a Buyee link to buy from abroad.
 - **USA.** eBay.com (US sellers) is checked by the server every minute, and Craigslist by the browser extension: pick up to 5 Craigslist areas per watch from Craigslist's own list (a town belongs to its nearest city's area — Leander is in *austin*). Prices in USD.
 - **Pause switch.** One tap in the extension popup pauses Facebook and Craigslist checks for 1 h, 3 h or until you start again, and closes the pinned Facebook tab so your browser stays light. Server sources keep running.
 - **Germany and Austria.** willhaben.at, Kleinanzeigen.de, eBay.de and eBay.at join the sources. Like Bazoš or OLX, the server checks them every minute, newest first.

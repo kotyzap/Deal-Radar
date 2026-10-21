@@ -15,9 +15,9 @@ add('meta.title', null, `Deal Radar — napište prodejci jako první`, `Deal Ra
 add('hero.kicker', null, `Soukromá beta · jen na pozvánku`, `Private Beta · nur mit Einladung`, `プライベートベータ・招待制`);
 add('hero.h1', null, `Napište prodejci jako první.`, `Schreiben Sie dem Verkäufer als Erster.`, `誰よりも早く出品者に連絡しよう。`);
 add('hero.lead', null,
-  `Deal Radar hlídá Facebook Marketplace a vaše facebookové skupiny — a k tomu nejlepší bazary v Česku, na Slovensku, v Polsku, Německu a Rakousku a eBay.com a Craigslist v USA — a do minuty od vložení nového inzerátu vám napíše na Telegram, dřív než je nabídka pryč.`,
-  `Deal Radar überwacht Facebook Marketplace und Ihre Facebook-Gruppen — dazu die wichtigsten Marktplätze in Tschechien, der Slowakei, Polen, Deutschland und Österreich sowie eBay.com und Craigslist in den USA — und meldet sich innerhalb einer Minute nach einem neuen Angebot auf Telegram, bevor das Schnäppchen weg ist.`,
-  `Deal RadarはFacebook MarketplaceとあなたのFacebookグループ、さらにチェコ・スロバキア・ポーランド・ドイツ・オーストリアの主要マーケットプレイスと米国のeBay.comとCraigslistを監視し、新しい出品から1分以内、売り切れる前にTelegramで通知します。`);
+  `Deal Radar hlídá Facebook Marketplace a vaše facebookové skupiny — a k tomu nejlepší bazary v Česku, na Slovensku, v Polsku, Německu, Rakousku, Norsku, Švédsku, Finsku a Dánsku, eBay.com a Craigslist v USA, Mercari v Japonsku a Chrono24 na hodinky — a do minuty od vložení nového inzerátu vám napíše na Telegram, dřív než je nabídka pryč.`,
+  `Deal Radar überwacht Facebook Marketplace und Ihre Facebook-Gruppen — dazu die wichtigsten Marktplätze in Tschechien, der Slowakei, Polen, Deutschland, Österreich, Norwegen, Schweden, Finnland und Dänemark, eBay.com und Craigslist in den USA, Mercari in Japan und Chrono24 für Uhren — und meldet sich innerhalb einer Minute nach einem neuen Angebot auf Telegram, bevor das Schnäppchen weg ist.`,
+  `Deal RadarはFacebook MarketplaceとあなたのFacebookグループ、さらにチェコ・スロバキア・ポーランド・ドイツ・オーストリア・ノルウェー・スウェーデン・フィンランド・デンマークの主要マーケットプレイス、米国のeBay.comとCraigslist、日本のメルカリ、時計のChrono24を監視し、新しい出品から1分以内、売り切れる前にTelegramで通知します。`);
 add('cta.how', null, `Jak to funguje`, `So funktioniert's`, `仕組み`);
 add('cta.github', null, `Zobrazit na GitHubu`, `Auf GitHub ansehen`, `GitHubで見る`);
 add('hero.invite', null,
@@ -51,6 +51,16 @@ add('how.3', null,
   `<b>Suchauftrag anlegen.</b> Stichwörter, die vorkommen müssen, Stichwörter, die nicht vorkommen dürfen, Mindest- und Höchstpreis in Ihrer Währung — CZK, EUR, PLN oder USD (Angebote in anderen Währungen werden zum täglichen ČNB-Kurs umgerechnet), die Quellen und bei Facebook die zu durchsuchenden Gruppen. Eine 7-Tage-Vorschau zeigt, was er gefunden hätte.`,
   `<b>ウォッチを作成。</b>含めるキーワード、除外するキーワード、あなたの通貨（CZK・EUR・PLN・USD）での最低・最高価格（他の通貨の出品はČNBの日次レートで換算）、ソース、Facebookの場合は検索するグループを指定します。7日間のプレビューで、何が見つかったはずかを確認できます。`);
 add('news.h2', null, `Novinky`, `Neuigkeiten`, `最新情報`);
+add('news.nordH', null, `Skandinávie`, `Skandinavien`, `北欧`);
+add('news.nordP', null,
+  `Mezi zdroje přibyly FINN.no, Blocket.se, Tori.fi a DBA.dk. Server je kontroluje každou minutu, nejnovější první. Ceny v NOK, SEK, EUR a DKK a vedle nich ve vaší měně.`,
+  `FINN.no, Blocket.se, Tori.fi und DBA.dk kommen als Quellen dazu. Der Server fragt sie jede Minute ab, neueste zuerst. Preise in NOK, SEK, EUR und DKK, daneben in Ihrer Währung.`,
+  `FINN.no、Blocket.se、Tori.fi、DBA.dkがソースに加わりました。サーバーが毎分、新しい順にチェックします。価格はNOK・SEK・EUR・DKKと、あなたの通貨で表示されます。`);
+add('news.jpH', null, `Chrono24 a japonské Mercari`, `Chrono24 und Mercari Japan`, `Chrono24とメルカリ`);
+add('news.jpP', null,
+  `Obojí kontroluje rozšíření prohlížeče. Mercari vyžaduje japonské telefonní číslo, proto každé upozornění z Mercari obsahuje i odkaz na Buyee pro nákup ze zahraničí.`,
+  `Beide prüft die Browser-Erweiterung. Mercari verlangt eine japanische Telefonnummer, deshalb enthält jede Mercari-Meldung auch einen Buyee-Link zum Kauf aus dem Ausland.`,
+  `どちらもブラウザ拡張機能がチェックします。日本国外の方はメルカリで直接購入できないため、メルカリの通知には海外から購入できるBuyeeのリンクも付きます。`);
 add('news.deH', null, `Německo a Rakousko`, `Deutschland und Österreich`, `ドイツとオーストリア`);
 add('news.deP', null,
   `Mezi zdroje přibyly willhaben.at, Kleinanzeigen.de, eBay.de a eBay.at. Stejně jako Bazoš nebo OLX je server kontroluje každou minutu, nejnovější první.`,
