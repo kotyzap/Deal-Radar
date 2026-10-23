@@ -12,20 +12,23 @@ add('theme.toggle', null, `Přepnout motiv`, `Design wechseln`, `テーマ切替
 add('theme.dark', `Dark`, `Tmavý`, `Dunkel`, `ダーク`);
 add('theme.light', `Light`, `Světlý`, `Hell`, `ライト`);
 add('meta.title', null, `Deal Radar — napište prodejci jako první`, `Deal Radar — schreiben Sie dem Verkäufer als Erster`, `Deal Radar — 誰よりも早く出品者に連絡しよう`);
-add('hero.kicker', null, `Soukromá beta · jen na pozvánku`, `Private Beta · nur mit Einladung`, `プライベートベータ・招待制`);
+add('hero.kicker', null,
+  `Zdarma v prohlížeči · Telegram s předplatným`,
+  `Kostenlos im Browser · Telegram mit dem Abo`,
+  `ブラウザで無料・プランならTelegram`);
 add('hero.h1', null, `Napište prodejci jako první.`, `Schreiben Sie dem Verkäufer als Erster.`, `誰よりも早く出品者に連絡しよう。`);
 add('hero.lead', null,
-  `Deal Radar hlídá Facebook Marketplace a vaše facebookové skupiny — a k tomu nejlepší bazary v Česku, na Slovensku, v Polsku, Německu, Rakousku, Norsku, Švédsku, Finsku a Dánsku, eBay.com a Craigslist v USA, Mercari v Japonsku a Chrono24 na hodinky — a do minuty od vložení nového inzerátu vám napíše na Telegram, dřív než je nabídka pryč.`,
-  `Deal Radar überwacht Facebook Marketplace und Ihre Facebook-Gruppen — dazu die wichtigsten Marktplätze in Tschechien, der Slowakei, Polen, Deutschland, Österreich, Norwegen, Schweden, Finnland und Dänemark, eBay.com und Craigslist in den USA, Mercari in Japan und Chrono24 für Uhren — und meldet sich innerhalb einer Minute nach einem neuen Angebot auf Telegram, bevor das Schnäppchen weg ist.`,
-  `Deal RadarはFacebook MarketplaceとあなたのFacebookグループ、さらにチェコ・スロバキア・ポーランド・ドイツ・オーストリア・ノルウェー・スウェーデン・フィンランド・デンマークの主要マーケットプレイス、米国のeBay.comとCraigslist、日本のメルカリ、時計のChrono24を監視し、新しい出品から1分以内、売り切れる前にTelegramで通知します。`);
+  `Deal Radar hlídá Facebook Marketplace a vaše facebookové skupiny — a k tomu nejlepší bazary v Česku, na Slovensku, v Polsku, Německu, Rakousku, Norsku, Finsku a Dánsku, eBay.com a Craigslist v USA, Mercari v Japonsku a Chrono24 na hodinky — a dá vám vědět o novém inzerátu, dřív než je nabídka pryč.`,
+  `Deal Radar überwacht Facebook Marketplace und Ihre Facebook-Gruppen — dazu die wichtigsten Marktplätze in Tschechien, der Slowakei, Polen, Deutschland, Österreich, Norwegen, Finnland und Dänemark, eBay.com und Craigslist in den USA, Mercari in Japan und Chrono24 für Uhren — und meldet ein neues Angebot, bevor das Schnäppchen weg ist.`,
+  `Deal RadarはFacebook MarketplaceとあなたのFacebookグループ、さらにチェコ・スロバキア・ポーランド・ドイツ・オーストリア・ノルウェー・フィンランド・デンマークの主要マーケットプレイス、米国のeBay.comとCraigslist、日本のメルカリ、時計のChrono24を監視し、売り切れる前に新しい出品を知らせます。`);
 add('cta.how', null, `Jak to funguje`, `So funktioniert's`, `仕組み`);
 add('cta.github', null, `Zobrazit na GitHubu`, `Auf GitHub ansehen`, `GitHubで見る`);
 add('hero.invite', null,
-  `Deal Radar je v soukromém pilotu. Veřejně ke stažení není: rozšíření prohlížeče dostávají přímo pozvaní uživatelé.`,
-  `Deal Radar ist in einem privaten Pilotbetrieb. Es gibt keinen öffentlichen Download: Die Browser-Erweiterung wird direkt an eingeladene Nutzer weitergegeben.`,
-  `Deal Radarは非公開のパイロット運用中です。一般公開のダウンロードはなく、ブラウザ拡張機能は招待されたユーザーに直接配布されます。`);
+  `Zdarma: samotné rozšíření prohlížeče — 3 hlídače, kontrola každých 10 minut, oznámení v prohlížeči. Předplatné za 9 € měsíčně pro 5 hlídačů: upozornění na Telegram do mobilu a server, který kontroluje každou minutu, i když je počítač vypnutý.`,
+  `Kostenlos: nur die Browser-Erweiterung — 3 Suchaufträge, alle 10 Minuten geprüft, Benachrichtigungen im Browser. Das Abo, 9 € im Monat für 5 Suchaufträge: Telegram-Meldungen aufs Handy und der Server prüft jede Minute, auch wenn Ihr Computer aus ist.`,
+  `無料：ブラウザ拡張機能のみ — ウォッチ3件、10分ごとにチェック、ブラウザに通知。プランは5件で月9ユーロ：スマホにTelegram通知、サーバーが毎分チェック（パソコンがオフでも）。`);
 add('src.fbGroups', null, `FB skupiny`, `FB-Gruppen`, `FBグループ`);
-add('alt.watches', null, `Seznam hlídačů Deal Radaru s klíčovými slovy, cenovým limitem, zdroji a nabídkou`, `Deal-Radar-Suchaufträge mit Stichwörtern, Preisgrenze, Quellen und Gebot`, `キーワード・価格上限・ソース・入札額を表示したDeal Radarのウォッチ一覧`);
+add('alt.watches', null, `Seznam hlídačů Deal Radaru s klíčovými slovy, cenovým rozsahem, zdroji a poslední kontrolou`, `Deal-Radar-Suchaufträge mit Stichwörtern, Preisspanne, Quellen und letzter Prüfung`, `キーワード・価格帯・ソース・最終チェックを表示したDeal Radarのウォッチ一覧`);
 add('alt.watchesDark', null, `Seznam hlídačů Deal Radaru, tmavý motiv`, `Deal-Radar-Suchaufträge, dunkles Design`, `Deal Radarのウォッチ一覧（ダークテーマ）`);
 add('alt.editor', null, `Editor hlídače s minimální a maximální cenou, zdroji, FB skupinami a 7denním náhledem odpovídajících inzerátů`, `Suchauftrag-Editor mit Mindest- und Höchstpreis, Quellen, FB-Gruppen und 7-Tage-Vorschau passender Angebote`, `最低・最高価格、ソース、FBグループ、一致する出品の7日間プレビューを表示したウォッチエディタ`);
 add('alt.editorDark', null, `Editor hlídače, tmavý motiv`, `Suchauftrag-Editor, dunkles Design`, `ウォッチエディタ（ダークテーマ）`);
@@ -35,21 +38,21 @@ add('alt.popup', null, `Vyskakovací okno rozšíření: hledání na FB Marketp
 add('alt.popupDark', null, `Vyskakovací okno rozšíření, tmavý motiv`, `Popup der Erweiterung, dunkles Design`, `拡張機能のポップアップ（ダークテーマ）`);
 add('alt.groups', null, `Karta FB skupiny: zaškrtněte až 10 skupin, které smí hlídače prohledávat`, `Tab FB-Gruppen: bis zu 10 beigetretene Gruppen anhaken, die Suchaufträge durchsuchen dürfen`, `FBグループタブ：ウォッチが検索できる参加中のグループを最大10個チェック`);
 add('alt.groupsDark', null, `Karta FB skupiny, tmavý motiv`, `Tab FB-Gruppen, dunkles Design`, `FBグループタブ（ダークテーマ）`);
-add('alt.wallet', null, `Peněženka: zůstatek, cena za den, zbývající dny a kód pro dobití přes Ko-fi`, `Guthaben: Stand, Kosten pro Tag, verbleibende Tage und Ko-fi-Aufladecode`, `ウォレット：残高、1日あたりの費用、残り日数、Ko-fiチャージ用コード`);
-add('alt.walletDark', null, `Peněženka, tmavý motiv`, `Guthaben, dunkles Design`, `ウォレット（ダークテーマ）`);
+add('alt.wallet', null, `Karta Předplatné: zdarma vs. předplatné a jak ho získat přes Telegram a Ko-fi`, `Abo-Tab: kostenlos vs. Abo und wie man es mit Telegram und Ko-fi startet`, `プランタブ：無料とプランの比較、TelegramとKo-fiでの始め方`);
+add('alt.walletDark', null, `Karta Předplatné, tmavý motiv`, `Abo-Tab, dunkles Design`, `プランタブ（ダークテーマ）`);
 
 add('how.1', null,
-  `<b>Získejte pozvánku.</b> Odkaz s pozvánkou a rozšíření Deal Radar pro Chrome nebo Firefox dostanete přímo — v žádném veřejném obchodě není.`,
-  `<b>Einladung erhalten.</b> Sie bekommen einen Einladungslink und die Deal-Radar-Erweiterung für Chrome oder Firefox direkt — sie ist in keinem öffentlichen Store.`,
-  `<b>招待を受ける。</b>招待リンクとChrome／Firefox用のDeal Radar拡張機能が直接届きます。公開ストアにはありません。`);
+  `<b>Nainstalujte rozšíření</b> pro Chrome (verze pro Firefox je zkušební). Nic se neregistruje.`,
+  `<b>Installieren Sie die Erweiterung</b> für Chrome (der Firefox-Build ist experimentell). Keine Anmeldung nötig.`,
+  `Chrome用の<b>拡張機能をインストール</b>（Firefox版は試験的）。登録は不要です。`);
 add('how.2', null,
-  `<b>Stiskněte Start v @DealRadarRobot a přihlaste se přes Telegram</b> — otevřete odkaz s pozvánkou, nebo rozšíření (vyskakovací okno → Hlídače → Začínáme) a vložte odkaz tam. Žádné heslo, žádný e-mail. Upozornění chodí na stejný účet Telegram.`,
-  `<b>Bei @DealRadarRobot auf Start drücken, dann mit Telegram anmelden</b> — den Einladungslink öffnen oder die Erweiterung (Popup → Suchaufträge → Erste Schritte) und den Link dort einfügen. Kein Passwort, keine E-Mail. Treffer kommen im selben Telegram-Konto an.`,
-  `<b>@DealRadarRobotで「Start」を押してから、Telegramでログイン</b>。招待リンクを開くか、拡張機能（ポップアップ → ウォッチ → はじめに）にリンクを貼り付けます。パスワードもメールも不要。通知は同じTelegramアカウントに届きます。`);
+  `<b>Chcete to v mobilu?</b> Rozšíření → Předplatné: stiskněte Start v @DealRadarRobot, přihlaste se přes Telegram a staňte se členem na Ko-fi se svým kódem DR. Rozšíření se přepne samo do 5 minut, dokud je prohlížeč otevřený.`,
+  `<b>Lieber aufs Handy?</b> Erweiterung → Abo: Start bei @DealRadarRobot drücken, mit Telegram anmelden und auf Ko-fi mit Ihrem DR-Code Mitglied werden. Die Erweiterung wechselt innerhalb von 5 Minuten von selbst, solange der Browser offen ist.`,
+  `<b>スマホで受け取りたい？</b>拡張機能 → プラン：@DealRadarRobotでStartを押し、Telegramでログインして、DRコード付きでKo-fiのメンバーになります。ブラウザが開いていれば、拡張機能は5分以内に自動で切り替わります。`);
 add('how.3', null,
-  `<b>Vytvořte hlídač.</b> Klíčová slova, která musí být v názvu, slova, která tam být nesmí, minimální a maximální cena ve vaší měně — CZK, EUR, PLN nebo USD (inzeráty v jiných měnách se přepočítávají denním kurzem ČNB), zdroje a u Facebooku skupiny, které se mají prohledávat. 7denní náhled ukáže, co by zachytil.`,
-  `<b>Suchauftrag anlegen.</b> Stichwörter, die vorkommen müssen, Stichwörter, die nicht vorkommen dürfen, Mindest- und Höchstpreis in Ihrer Währung — CZK, EUR, PLN oder USD (Angebote in anderen Währungen werden zum täglichen ČNB-Kurs umgerechnet), die Quellen und bei Facebook die zu durchsuchenden Gruppen. Eine 7-Tage-Vorschau zeigt, was er gefunden hätte.`,
-  `<b>ウォッチを作成。</b>含めるキーワード、除外するキーワード、あなたの通貨（CZK・EUR・PLN・USD）での最低・最高価格（他の通貨の出品はČNBの日次レートで換算）、ソース、Facebookの場合は検索するグループを指定します。7日間のプレビューで、何が見つかったはずかを確認できます。`);
+  `<b>Vytvořte hlídač.</b> Klíčová slova, která musí být v názvu, slova, která tam být nesmí, minimální a maximální cena ve vaší měně — CZK, EUR, PLN nebo USD (inzeráty v jiných měnách se přepočítávají denním kurzem ČNB), zdroje (rychlý výběr podle země) a u Facebooku skupiny, které se mají prohledávat. Inzeráty bez ceny jen když to zaškrtnete. 7denní náhled ukáže, co by zachytil.`,
+  `<b>Suchauftrag anlegen.</b> Stichwörter, die vorkommen müssen, Stichwörter, die nicht vorkommen dürfen, Mindest- und Höchstpreis in Ihrer Währung — CZK, EUR, PLN oder USD (Angebote in anderen Währungen werden zum täglichen ČNB-Kurs umgerechnet), die Quellen (Schnellauswahl nach Land) und bei Facebook die zu durchsuchenden Gruppen. Angebote ohne Preis nur, wenn Sie es ankreuzen. Eine 7-Tage-Vorschau zeigt, was er gefunden hätte.`,
+  `<b>ウォッチを作成。</b>含めるキーワード、除外するキーワード、あなたの通貨（CZK・EUR・PLN・USD）での最低・最高価格（他の通貨の出品はČNBの日次レートで換算）、ソース（国別のクイック選択）、Facebookの場合は検索するグループを指定します。価格のない出品はチェックした場合のみ。7日間のプレビューで、何が見つかったはずかを確認できます。`);
 add('flow.h', null, `Od inzerátu k upozornění`, `Vom Inserat zur Benachrichtigung`, `出品から通知まで`);
 add('flow.you', null, `S Deal Radarem`, `Mit Deal Radar`, `Deal Radarなら`);
 add('flow.s1h', null, `Vloženo`, `Eingestellt`, `出品`);
@@ -70,47 +73,59 @@ add('flow.realK', null, `Skutečné upozornění, 21. října`, `Eine echte Bena
 add('flow.realP', null, `Prodejce z Polska na Vintedu, cena převedená na Kč. Když se upozornění otevřelo, inzerát ukazoval „vystaveno před minutou“.`, `Ein polnischer Verkäufer auf Vinted, Preis in CZK umgerechnet. Beim Öffnen der Benachrichtigung zeigte das Inserat „vor einer Minute eingestellt“.`, `Vintedのポーランドの出品者、価格はCZKに換算。通知を開いたとき、出品には「1分前に出品」と表示されていました。`);
 add('flow.engK', null, `Kdo co kontroluje`, `Wer was prüft`, `チェックの担当`);
 add('flow.srvH', null, `Server`, `Der Server`, `サーバー`);
-add('flow.srvP', null, `Každou minutu, počítač může být vypnutý. Bazoš, Aukro, Sbazar, Vinted, OLX, Kleinanzeigen, willhaben, FINN, Blocket, Tori, DBA.`, `Jede Minute, Ihr Computer darf aus sein. Bazoš, Aukro, Sbazar, Vinted, OLX, Kleinanzeigen, willhaben, FINN, Blocket, Tori, DBA.`, `毎分。パソコンの電源は切れていても大丈夫。Bazoš、Aukro、Sbazar、Vinted、OLX、Kleinanzeigen、willhaben、FINN、Blocket、Tori、DBA。`);
+add('flow.srvP', null,
+  `S předplatným: každou minutu, počítač může být vypnutý. Bazoš, Aukro, Sbazar, Vinted, OLX, Kleinanzeigen, willhaben, FINN, Tori, DBA. Zdarma je kontroluje váš prohlížeč, každých 10 minut.`,
+  `Mit dem Abo: jede Minute, Ihr Computer darf aus sein. Bazoš, Aukro, Sbazar, Vinted, OLX, Kleinanzeigen, willhaben, FINN, Tori, DBA. Kostenlos prüft Ihr Browser sie, alle 10 Minuten.`,
+  `プランなら毎分。パソコンの電源は切れていても大丈夫。Bazoš、Aukro、Sbazar、Vinted、OLX、Kleinanzeigen、willhaben、FINN、Tori、DBA。無料ではブラウザが10分ごとにチェックします。`);
 add('flow.extH', null, `Váš prohlížeč`, `Ihr Browser`, `あなたのブラウザ`);
 add('flow.extP', null, `Rozšíření, dokud je prohlížeč otevřený. FB Marketplace, FB skupiny, Craigslist, Mercari JP, Chrono24, Allegro, eBay.`, `Die Erweiterung, solange der Browser offen ist. FB Marketplace, FB-Gruppen, Craigslist, Mercari JP, Chrono24, Allegro, eBay.`, `ブラウザが開いている間は拡張機能が担当。FB Marketplace、FBグループ、Craigslist、メルカリ、Chrono24、Allegro、eBay。`);
 add('cov.h2', null, `Kde Deal Radar hledá`, `Wo Deal Radar sucht`, `Deal Radarの検索範囲`);
-add('cov.p', null, `Bazary v 11 zemích se kontrolují každou minutu, nejnovější první. Katalog Vintedu přidává inzeráty z Polska, Maďarska, Rumunska, Chorvatska a Slovinska. Facebook Marketplace, vaše facebookové skupiny, eBay.com a Chrono24 fungují, ať jste kdekoli.`,
-  `Marktplätze in 11 Ländern werden jede Minute geprüft, die neuesten zuerst. Der Vinted-Katalog bringt Angebote aus Polen, Ungarn, Rumänien, Kroatien und Slowenien dazu. Facebook Marketplace, Ihre Facebook-Gruppen, eBay.com und Chrono24 funktionieren überall.`,
-  `11か国のマーケットプレイスを毎分、新着順にチェックします。Vintedのカタログにはポーランド、ハンガリー、ルーマニア、クロアチア、スロベニアの出品も含まれます。Facebook Marketplace、あなたのFacebookグループ、eBay.com、Chrono24はどこにいても使えます。`);
-add('alt.map', null, `Mapa: pokryté jsou Česko, Slovensko, Polsko, Německo, Rakousko, Dánsko, Norsko, Švédsko, Finsko, USA a Japonsko; Vinted přidává Maďarsko, Rumunsko, Chorvatsko a Slovinsko`, `Karte: abgedeckt sind Tschechien, Slowakei, Polen, Deutschland, Österreich, Dänemark, Norwegen, Schweden, Finnland, USA und Japan; Vinted ergänzt Ungarn, Rumänien, Kroatien und Slowenien`, `地図：チェコ、スロバキア、ポーランド、ドイツ、オーストリア、デンマーク、ノルウェー、スウェーデン、フィンランド、米国、日本が対象。Vintedでハンガリー、ルーマニア、クロアチア、スロベニアも`);
-add('news.freeH', null, `5 hlídačů zdarma`, `5 kostenlose Suchaufträge`, `無料ウォッチ5件`);
-add('news.freeP', null, `Během zkušebního období nebo pozvánky zdarma je 5 hlídačů zdarma. Každý další stojí od 5 € týdně — každý hlídač se prohledává každou minutu na každém svém zdroji. Když dojdou peníze, pozastaví se jen ty navíc.`,
-  `Während der Testphase oder einer kostenlosen Einladung sind 5 Suchaufträge kostenlos. Jeder weitere kostet ab 5 €/Woche — jeder Suchauftrag wird jede Minute auf jeder seiner Quellen durchsucht. Ist das Guthaben leer, pausieren nur die zusätzlichen.`,
-  `無料トライアルや無料招待の期間中は5件のウォッチが無料です。それを超える分は1件あたり週€5から。各ウォッチは毎分すべてのソースで検索されるためです。残高がなくなると、追加分だけが一時停止します。`);
-add('news.startH', null, `Snadnější start`, `Leichterer Start`, `スムーズな開始`);
-add('news.startP', null, `Otevřete odkaz s pozvánkou, nebo ho vložte do rozšíření — na pořadí nezáleží. Aplikace upozorní, když vám Telegram nemůže psát, a u každého hlídače ukazuje, kdy byl naposledy zkontrolován.`,
-  `Öffnen Sie den Einladungslink oder fügen Sie ihn in die Erweiterung ein — die Reihenfolge ist egal. Die App warnt, wenn Telegram Sie nicht erreicht, und jeder Suchauftrag zeigt, wann er zuletzt geprüft wurde.`,
-  `招待リンクを開くか、拡張機能に貼り付けてください。順番はどちらでも構いません。Telegramに届かない場合はアプリが警告し、各ウォッチには最終チェック時刻が表示されます。`);
+add('cov.p', null,
+  `Bazary v 10 zemích se kontrolují od nejnovějších — s předplatným serverem každou minutu, zdarma vaším prohlížečem každých 10 minut. Katalog Vintedu přidává inzeráty z Polska, Maďarska, Rumunska, Chorvatska a Slovinska. Facebook Marketplace, vaše facebookové skupiny, eBay.com a Chrono24 fungují, ať jste kdekoli.`,
+  `Marktplätze in 10 Ländern werden neueste zuerst geprüft — mit dem Abo jede Minute vom Server, kostenlos alle 10 Minuten von Ihrem Browser. Vinteds Katalog ergänzt Angebote aus Polen, Ungarn, Rumänien, Kroatien und Slowenien. Facebook Marketplace, Ihre Facebook-Gruppen, eBay.com und Chrono24 funktionieren überall.`,
+  `10か国のマーケットプレイスを新しい順にチェックします — プランならサーバーが毎分、無料ならブラウザが10分ごと。Vintedのカタログにはポーランド・ハンガリー・ルーマニア・クロアチア・スロベニアの出品も含まれます。Facebook Marketplace、Facebookグループ、eBay.com、Chrono24はどこでも使えます。`);
+add('alt.map', null, `Mapa: pokryté jsou Česko, Slovensko, Polsko, Německo, Rakousko, Dánsko, Norsko, Finsko, USA a Japonsko; Vinted přidává Maďarsko, Rumunsko, Chorvatsko a Slovinsko`, `Karte: abgedeckt sind Tschechien, Slowakei, Polen, Deutschland, Österreich, Dänemark, Norwegen, Finnland, USA und Japan; Vinted ergänzt Ungarn, Rumänien, Kroatien und Slowenien`, `地図：チェコ、スロバキア、ポーランド、ドイツ、オーストリア、デンマーク、ノルウェー、フィンランド、米国、日本が対象。Vintedでハンガリー、ルーマニア、クロアチア、スロベニアも`);
+add('news.v21H', null, `2.1: hladší start`, `2.1: ein glatterer Start`, `2.1：よりスムーズなスタート`);
+add('news.v21P', null,
+  `Po zaplacení se rozšíření samo přepne na předplatné do 5 minut — žádnou kartu nemusíte nechávat otevřenou. Přihlášení už nevyprší, dokud Deal Radar používáte. Nové hlídače začínají se stránkami vaší země (zbytek rychlým výběrem), inzeráty bez ceny jen když chcete, a hlídače jde exportovat do souboru.`,
+  `Nach dem Bezahlen wechselt die Erweiterung innerhalb von 5 Minuten von selbst zum Abo — kein Tab muss offen bleiben. Anmeldungen laufen nicht mehr ab, solange Sie Deal Radar nutzen. Neue Suchaufträge starten mit den Seiten Ihres Landes (Schnellauswahl für den Rest), Angebote ohne Preis nur auf Wunsch, und Suchaufträge lassen sich als Datei exportieren.`,
+  `支払い後、拡張機能は5分以内に自動でプランに切り替わります — タブを開いたままにする必要はありません。Deal Radarを使っている間はログインが切れません。新しいウォッチはあなたの国のサイトから始まり（他はクイック選択）、価格のない出品は希望時のみ、ウォッチはファイルに書き出せます。`);
+add('news.freeH', null,
+  `Zdarma v prohlížeči`,
+  `Kostenlos im Browser`,
+  `ブラウザで無料`);
+add('news.freeP', null,
+  `Deal Radar 2.0: bez účtu, bez pozvánky. Nainstalujte rozšíření a přidejte až 3 hlídače; každý web se kontroluje z vašeho prohlížeče každých 10 minut a shody vyskočí jako oznámení. Po vypnutém počítači vám jedno shrnutí řekne, kolik jich mezitím přišlo.`,
+  `Deal Radar 2.0: kein Konto, keine Einladung. Erweiterung installieren, bis zu 3 Suchaufträge anlegen; jede Seite wird alle 10 Minuten aus Ihrem Browser geprüft, Treffer erscheinen als Benachrichtigung. War der Computer aus, sagt eine Zusammenfassung, wie viele inzwischen kamen.`,
+  `Deal Radar 2.0：アカウントも招待も不要。拡張機能を入れてウォッチを3件まで追加すると、各サイトをブラウザから10分ごとにチェックし、一致を通知します。パソコンがオフだった後は、その間の件数をまとめて知らせます。`);
+add('news.startH', null,
+  `Předplatné: Telegram + server`,
+  `Das Abo: Telegram + Server`,
+  `プラン：Telegram＋サーバー`);
+add('news.startP', null,
+  `9 € měsíčně za 5 hlídačů, jako členství na Ko-fi. Server kontroluje každou minutu, i když je počítač vypnutý, a upozornění chodí do mobilu. Po zaplacení se rozšíření přepne samo. Žádné přihazování: všichni se to dozví naráz.`,
+  `9 € im Monat für 5 Suchaufträge, als Ko-fi-Mitgliedschaft. Der Server prüft jede Minute, auch wenn der Computer aus ist, und Meldungen kommen aufs Handy. Nach der Zahlung wechselt die Erweiterung von selbst. Kein Bieten mehr: Alle erfahren es gleichzeitig.`,
+  `Ko-fiのメンバーシップで5件月9ユーロ。サーバーがパソコンオフ時も毎分チェックし、通知はスマホに届きます。支払うと拡張機能が自動で切り替わります。入札は廃止：全員が同時に知らされます。`);
 add('news.h2', null, `Novinky`, `Neuigkeiten`, `最新情報`);
 add('news.nordH', null, `Skandinávie`, `Skandinavien`, `北欧`);
 add('news.nordP', null,
-  `Mezi zdroje přibyly FINN.no, Blocket.se, Tori.fi a DBA.dk. Server je kontroluje každou minutu, nejnovější první. Ceny v NOK, SEK, EUR a DKK a vedle nich ve vaší měně.`,
-  `FINN.no, Blocket.se, Tori.fi und DBA.dk kommen als Quellen dazu. Der Server fragt sie jede Minute ab, neueste zuerst. Preise in NOK, SEK, EUR und DKK, daneben in Ihrer Währung.`,
-  `FINN.no、Blocket.se、Tori.fi、DBA.dkがソースに加わりました。サーバーが毎分、新しい順にチェックします。価格はNOK・SEK・EUR・DKKと、あなたの通貨で表示されます。`);
+  `FINN.no, Tori.fi a DBA.dk patří mezi zdroje, kontrolují se od nejnovějších. Ceny v NOK, EUR a DKK, vedle nich ve vaší měně.`,
+  `FINN.no, Tori.fi und DBA.dk gehören zu den Quellen, neueste zuerst geprüft. Preise in NOK, EUR und DKK, daneben in Ihrer Währung.`,
+  `FINN.no、Tori.fi、DBA.dkをソースとして新しい順にチェックします。価格はNOK・EUR・DKKで、あなたの通貨も併記します。`);
 add('news.jpH', null, `Chrono24 a japonské Mercari`, `Chrono24 und Mercari Japan`, `Chrono24とメルカリ`);
 add('news.jpP', null,
   `Obojí kontroluje rozšíření prohlížeče. Mercari vyžaduje japonské telefonní číslo, proto každé upozornění z Mercari obsahuje i odkaz na Buyee pro nákup ze zahraničí.`,
   `Beide prüft die Browser-Erweiterung. Mercari verlangt eine japanische Telefonnummer, deshalb enthält jede Mercari-Meldung auch einen Buyee-Link zum Kauf aus dem Ausland.`,
   `どちらもブラウザ拡張機能がチェックします。日本国外の方はメルカリで直接購入できないため、メルカリの通知には海外から購入できるBuyeeのリンクも付きます。`);
-add('news.deH', null, `Německo a Rakousko`, `Deutschland und Österreich`, `ドイツとオーストリア`);
-add('news.deP', null,
-  `Mezi zdroje přibyly willhaben.at, Kleinanzeigen.de, eBay.de a eBay.at. Stejně jako Bazoš nebo OLX je server kontroluje každou minutu, nejnovější první.`,
-  `willhaben.at, Kleinanzeigen.de, eBay.de und eBay.at kommen als Quellen dazu. Wie Bazoš oder OLX fragt der Server sie jede Minute ab, neueste zuerst.`,
-  `willhaben.at、Kleinanzeigen.de、eBay.de、eBay.atがソースに加わりました。BazošやOLXと同じく、サーバーが毎分、新しい順にチェックします。`);
 add('news.curH', null, `Ceny ve vaší měně`, `Preise in Ihrer Währung`, `あなたの通貨で価格表示`);
 add('news.curP', null,
   `Vyberte CZK, EUR, PLN nebo USD. Upozornění ukážou původní cenu inzerátu i cenu ve vaší měně — „850 PLN (≈ 201 EUR)“ — a minimální i maximální cenu hlídače zadáváte ve své měně.`,
   `Wählen Sie CZK, EUR, PLN oder USD. Treffer zeigen den Originalpreis und Ihren — „850 PLN (≈ 201 EUR)“ — und Mindest- und Höchstpreis eines Suchauftrags geben Sie in Ihrer Währung ein.`,
   `CZK・EUR・PLN・USDから選べます。通知には出品の元の価格とあなたの通貨での価格（「850 PLN (≈ 201 EUR)」）が表示され、ウォッチの最低・最高価格もあなたの通貨で設定できます。`);
 add('how.4', null,
-  `<b>Dostaňte upozornění.</b> Každý zdroj se kontroluje jednou za minutu. Nový odpovídající inzerát přistane v Telegramu s názvem, cenou (i ve vaší měně) a odkazem — a vy napíšete prodejci.`,
-  `<b>Treffer erhalten.</b> Jede Quelle wird einmal pro Minute abgefragt. Ein neues passendes Angebot landet mit Titel, Preis (auch in Ihrer Währung) und Link in Telegram — Sie schreiben dem Verkäufer.`,
-  `<b>通知を受け取る。</b>各ソースは1分ごとにチェックされます。一致する新しい出品は、タイトル・価格（あなたの通貨でも）・リンク付きでTelegramに届きます。あとは出品者に連絡するだけ。`);
+  `<b>Dostanete upozornění.</b> Zdarma: oznámení v prohlížeči do 10–12 minut. S předplatným: Telegram, u zdrojů serveru do minuty — název, cena (i ve vaší měně) a odkaz; prodejci napíšete vy.`,
+  `<b>Meldung erhalten.</b> Kostenlos: eine Benachrichtigung im Browser innerhalb von 10–12 Minuten. Mit dem Abo: Telegram, bei den Server-Quellen innerhalb einer Minute — Titel, Preis (auch in Ihrer Währung) und Link; Sie schreiben dem Verkäufer.`,
+  `<b>通知を受け取る。</b>無料：10〜12分以内にブラウザへ通知。プラン：サーバーのソースなら1分以内にTelegramへ — タイトル、価格（あなたの通貨でも）、リンク。出品者への連絡はあなたが。`);
 add('how.5', null,
   `<b>Hodnoťte Trefa, nebo Mimo.</b> Jedno ťuknutí u každého upozornění řekne radaru, jak dobře je hlídač nastavený.`,
   `<b>Mit Gut oder Unpassend bewerten.</b> Ein Tipp pro Treffer zeigt dem Radar, wie gut ein Suchauftrag eingestellt ist.`,
@@ -120,16 +135,16 @@ add('cap.editor', null,
   `Der Editor: Preisspanne, Quellen, die FB-Gruppen des Suchauftrags und was er in den letzten 7 Tagen gefunden hätte.`,
   `エディタ：価格帯、ソース、ウォッチのFBグループ、過去7日間に見つかったはずの出品。`);
 add('cap.alerts', null,
-  `Každé upozornění jde i na Telegram. „#1 z 3“ = dozvěděli jste se to první ze tří přihazujících; „#2 z 2“ = někdo vás přeplatil a dozvěděl se to o minutu dřív.`,
-  `Jeder Treffer geht auch an Telegram. „#1 von 3“ = Sie haben es als Erster von drei Bietenden erfahren; „#2 von 2“ = jemand hat Sie überboten und es eine Minute früher erfahren.`,
-  `すべての通知はTelegramにも届きます。「3人中1位」＝3人の入札者の中で最初に通知されたこと。「2人中2位」＝誰かがあなたより高く入札し、1分早く通知されたことを意味します。`);
+  `Upozornění s cenami, zdroji a hlasy Dobré / Nic moc. S předplatným jde každé upozornění i na Telegram.`,
+  `Meldungen mit Preisen, Quellen und Gut-/Schrott-Stimmen. Mit dem Abo geht jede Meldung auch auf Telegram.`,
+  `価格・ソース・良い／不要の評価付きの通知一覧。プランでは各通知がTelegramにも届きます。`);
 
 add('fb.h2', null, `Facebook Marketplace a skupiny ve vašem vlastním prohlížeči`, `Facebook Marketplace und Gruppen, in Ihrem eigenen Browser`, `Facebook Marketplaceとグループを、あなた自身のブラウザで`);
 add('fb.extH', null, `Rozšíření prohlížeče`, `Browser-Erweiterung`, `ブラウザ拡張機能`);
 add('fb.extP', null,
-  `FB nemá veřejné API pro vyhledávání, takže rozšíření kontroluje vaše hledání z vašeho běžného přihlášeného Chromu nebo Firefoxu — jedna připnutá karta, zhruba každé 3 minuty, nejnovější první, Praha + 500 km.`,
-  `FB hat keine öffentliche Such-API, daher prüft die Erweiterung Ihre Suchen in Ihrem normalen, angemeldeten Chrome oder Firefox — ein angehefteter Tab, etwa alle 3 Minuten, neueste zuerst, Prag + 500 km.`,
-  `FBには公開の検索APIがないため、拡張機能はログイン済みの普段のChromeやFirefoxから検索をチェックします。固定タブ1つで約3分ごと、新しい順、プラハから500km圏内。`);
+  `FB nemá veřejné API pro vyhledávání, takže rozšíření kontroluje vaše hledání z vašeho běžného přihlášeného Chromu — jedna připnutá karta, zhruba každé 3 minuty, nejnovější první, Praha + 500 km.`,
+  `FB hat keine öffentliche Such-API, daher prüft die Erweiterung Ihre Suchen in Ihrem normalen, angemeldeten Chrome — ein angehefteter Tab, etwa alle 3 Minuten, neueste zuerst, Prag + 500 km.`,
+  `FBには公開の検索APIがないため、拡張機能はログイン済みの普段のChromeから検索をチェックします。固定タブ1つで約3分ごと、新しい順、プラハから500km圏内。`);
 add('fb.grpH', null, `Vaše FB skupiny`, `Ihre FB-Gruppen`, `あなたのFBグループ`);
 add('fb.grpP', null,
   `Spousta nabídek se objeví jen ve sběratelských skupinách. Na kartě FB skupiny zaškrtnete až 10 skupin, ve kterých jste členem; každý hlídač si pak vybere, které z nich prohledávat. Rozšíření spouští vlastní vyhledávání Facebooku uvnitř každé skupiny podle klíčových slov hlídače, nejnovější příspěvky první, zhruba každých 10 minut.`,
@@ -137,9 +152,9 @@ add('fb.grpP', null,
   `多くの掘り出し物はコレクターグループにしか投稿されません。FBグループタブで参加中のグループを最大10個チェックし、各ウォッチがその中から検索するグループを選びます。拡張機能は各グループ内でFacebook自身の検索をウォッチのキーワードで実行します（新しい投稿順、約10分ごと）。`);
 add('fb.offH', null, `Jen nabídky, jen pro vás`, `Nur Angebote, nur für Sie`, `売り出しだけを、あなただけに`);
 add('fb.offP', null,
-  `Příspěvek ve skupině upozorní jen tehdy, když vypadá jako nabídka — má cenu nebo prodejní slovo (prodám, na prodej, cenu nabídněte, sprzedam…) a žádné slovo poptávky (koupím, hledám, kupię…). Příspěvky ze skupin jsou soukromé: upozorní jen toho, jehož prohlížeč je našel, nikdy nejdou do sdíleného indexu a nejsou součástí přihazování.`,
-  `Ein Gruppenbeitrag löst nur dann einen Treffer aus, wenn er wie ein Angebot aussieht — ein Preis oder ein Verkaufswort (prodám, na prodej, cenu nabídněte, sprzedam…) und kein „Suche“-Wort (koupím, hledám, kupię…). Gruppenbeiträge sind privat: Sie benachrichtigen nur die Person, deren Browser sie gefunden hat, kommen nie in den gemeinsamen Index und sind nicht Teil des Bietens.`,
-  `グループの投稿は、売り出しに見える場合だけ通知されます。つまり価格か販売を示す語（prodám、na prodej、cenu nabídněte、sprzedam…）があり、「買いたい」を示す語（koupím、hledám、kupię…）がない投稿です。グループの投稿は非公開で、見つけたブラウザの持ち主にだけ通知され、共有インデックスには入らず、入札の対象にもなりません。`);
+  `Příspěvek ve skupině upozorní jen tehdy, když vypadá jako nabídka — cena nebo prodejní slovo (prodám, na prodej, cenu nabídněte, sprzedam…) a žádné slovo poptávky (koupím, hledám, kupię…). Příspěvky ze skupin jsou soukromé: upozorní jen toho, čí prohlížeč je našel, a nikdy nejdou do sdíleného indexu.`,
+  `Ein Gruppenbeitrag meldet sich nur, wenn er wie ein Angebot aussieht — ein Preis oder ein Verkaufswort (prodám, na prodej, cenu nabídněte, sprzedam…) und kein Suchwort (koupím, hledám, kupię…). Gruppenbeiträge sind privat: Sie melden sich nur bei der Person, deren Browser sie gefunden hat, und landen nie im gemeinsamen Index.`,
+  `グループ投稿は、出品らしい場合だけ通知します — 価格か販売を示す語（prodám、na prodej、cenu nabídněte、sprzedam…）があり、「求む」の語（koupím、hledám、kupię…）がないこと。グループ投稿は非公開で、見つけたブラウザの持ち主にだけ通知され、共有インデックスには入りません。`);
 add('fb.leaveH', null, `Ven jdou jen inzeráty`, `Nur Angebote verlassen den Browser`, `送信されるのは出品情報だけ`);
 add('fb.leaveP', null,
   `Rozšíření posílá radaru jen karty a příspěvky, které vidí (název, cenu, odkaz). Vaše přihlášení k Facebooku zůstává v prohlížeči.`,
@@ -157,23 +172,35 @@ add('cap.groups', null,
   `FBグループタブ：Deal Radarが検索してよいグループをチェックします。各ウォッチはこの中から選びます。`);
 
 add('price.h2', null, `Ceník`, `Preise`, `料金`);
-add('plan.1', null, `7 dní <small>zkušebně zdarma</small>`, `7 Tage <small>kostenlos testen</small>`, `7日間 <small>無料トライアル</small>`);
-add('plan.1p', null, `Každý účet začíná týdnem zdarma s až 5 hlídači. Každý další stojí od 5 € týdně — každý hlídač se prohledává každou minutu na každém svém zdroji.`, `Jedes Konto startet mit einer kostenlosen Woche mit bis zu 5 Suchaufträgen. Jeder weitere kostet ab 5 €/Woche — jeder Suchauftrag wird jede Minute auf jeder seiner Quellen durchsucht.`, `すべてのアカウントは、ウォッチ5件までの無料1週間から始まります。それを超える分は1件あたり週€5から。各ウォッチは毎分すべてのソースで検索されます。`);
-add('plan.2', null, `od 2 € <small>za hlídač a týden</small>`, `ab 2 € <small>pro Suchauftrag und Woche</small>`, `€2から <small>ウォッチ1件・1週間あたり</small>`);
+add('plan.1', null,
+  `Zdarma <small>v prohlížeči</small>`,
+  `Kostenlos <small>im Browser</small>`,
+  `無料 <small>ブラウザで</small>`);
+add('plan.1p', null,
+  `3 hlídače, každé hledání se kontroluje každých 10 minut z vašeho prohlížeče, oznámení v něm. Bez účtu.`,
+  `3 Suchaufträge, jede Suche alle 10 Minuten aus Ihrem Browser geprüft, Benachrichtigungen dort. Ohne Konto.`,
+  `ウォッチ3件、各検索をブラウザから10分ごとにチェックし、ブラウザに通知。アカウント不要。`);
+add('plan.2', null,
+  `9 € <small>měsíčně za 5 hlídačů</small>`,
+  `9 € <small>im Monat für 5 Suchaufträge</small>`,
+  `月9ユーロ <small>ウォッチ5件</small>`);
 add('plan.2p', null,
-  `Každý aktivní hlídač stojí svou týdenní nabídku, strhávanou denně z peněženky, kterou dobíjíte na Ko-fi se svým osobním DR-kódem.`,
-  `Jeder aktive Suchauftrag kostet sein Wochengebot, täglich abgebucht vom Guthaben, das Sie auf Ko-fi mit Ihrem persönlichen DR-Code aufladen.`,
-  `有効なウォッチごとに週間入札額がかかり、個人のDRコードを使ってKo-fiでチャージしたウォレットから毎日引き落とされます。`);
-add('plan.3', null, `Přihoďte a dozvíte se to první <small></small>`, `Mehr bieten, früher erfahren <small></small>`, `入札して一番に知る <small></small>`);
+  `Upozornění na Telegram do mobilu. Server kontroluje Bazoš, Vinted, Kleinanzeigen a další každou minutu, i když je počítač vypnutý; v prohlížeči FB Marketplace, Mercari JP, Allegro a eBay zhruba každé 3 minuty, Craigslist a Chrono24 každých 5, FB skupiny každých 10. Členství na Ko-fi s vaším kódem DR.`,
+  `Telegram-Meldungen aufs Handy. Der Server prüft Bazoš, Vinted, Kleinanzeigen &amp; Co. jede Minute, auch wenn der Computer aus ist; im Browser FB Marketplace, Mercari JP, Allegro und eBay etwa alle 3 Minuten, Craigslist und Chrono24 alle 5, FB-Gruppen alle 10. Eine Ko-fi-Mitgliedschaft mit Ihrem DR-Code.`,
+  `スマホにTelegram通知。サーバーがBazoš、Vinted、Kleinanzeigenなどをパソコンオフ時も毎分チェック、ブラウザではFB Marketplace・メルカリ・Allegro・eBayは約3分ごと、Craigslist・Chrono24は5分ごと、FBグループは10分ごと。DRコード付きのKo-fiメンバーシップで。`);
+add('plan.3', null,
+  `+5 hlídačů <small>za každých dalších 9 €</small>`,
+  `+5 Suchaufträge <small>für je 9 € mehr</small>`,
+  `+5件 <small>9ユーロ追加ごとに</small>`);
 add('plan.3p', null,
-  `Když jeden inzerát odpovídá hlídačům více lidí, upozornění dostane nejdřív nejvyšší nabídka; každé další místo o minutu později. Upozornění ukazují vaše pořadí a nejvyšší nabídku soupeře.`,
-  `Passt ein Angebot zu Suchaufträgen mehrerer Personen, wird das höchste Gebot zuerst benachrichtigt; jeder weitere Platz eine Minute später. Treffer zeigen Ihren Rang und das höchste Konkurrenzgebot.`,
-  `1つの出品が複数の人のウォッチに一致した場合、最も高い入札者に最初に通知され、次の順位は1分ずつ遅れます。通知にはあなたの順位とライバルの最高入札額が表示されます。`);
+  `Všichni, jejichž hlídač sedí, se to dozví naráz — žádné přihazování. FB, FB skupiny, Craigslist, Mercari JP, Chrono24, Allegro a eBay vždy kontroluje váš prohlížeč, i s předplatným.`,
+  `Alle, deren Suchauftrag passt, erfahren es gleichzeitig — kein Bieten. FB, FB-Gruppen, Craigslist, Mercari JP, Chrono24, Allegro und eBay prüft immer Ihr Browser, auch mit dem Abo.`,
+  `一致した全員が同時に知らされます — 入札なし。FB、FBグループ、Craigslist、メルカリ、Chrono24、Allegro、eBayはプランでも常にブラウザがチェックします。`);
 add('status.h2', null, `Stav`, `Status`, `ステータス`);
 add('status.p', null,
-  `Soukromá beta — jen na pozvánku. Veřejně ke stažení není: rozšíření dostávají přímo pilotní uživatelé a přihlásit se mohou jen pozvané účty Telegram. Postaveno na Cloudflare Workers + D1, Telegram Login a rozšíření pro Chrome/Firefox. Zdrojový kód a changelog na <a href="https://github.com/kotyzap/deal-radar">GitHubu</a>.`,
-  `Private Beta — nur mit Einladung. Kein öffentlicher Download: Die Erweiterung wird direkt an Pilotnutzer weitergegeben, und nur eingeladene Telegram-Konten können sich anmelden. Gebaut mit Cloudflare Workers + D1, Telegram Login und einer Chrome/Firefox-Erweiterung. Quellcode und Changelog auf ${GH}.`,
-  `プライベートベータ（招待制）。一般公開のダウンロードはなく、拡張機能はパイロットユーザーに直接配布され、ログインできるのは招待されたTelegramアカウントだけです。Cloudflare Workers + D1、Telegram Login、Chrome／Firefox拡張機能で構築。ソースと変更履歴は${GH}で。`);
+  `2.1.0 — zdarma v prohlížeči, předplatné s Telegramem a serverem. Postaveno na Cloudflare Workers + D1, Telegram Login a rozšíření pro Chrome (verze pro Firefox je zkušební).`,
+  `2.1.0 — kostenlos im Browser, das Abo mit Telegram und Server. Gebaut auf Cloudflare Workers + D1, Telegram Login und einer Chrome-Erweiterung (Firefox-Build experimentell).`,
+  `2.1.0 — ブラウザでは無料、プランはTelegramとサーバー付き。Cloudflare Workers + D1、Telegram Login、Chrome拡張機能（Firefox版は試験的）で構築。`);
 
 // ---- engine
 let lang;

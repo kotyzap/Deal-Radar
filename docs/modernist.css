@@ -59,7 +59,7 @@ button.wide { min-width: 120px; }
 
 /* forms */
 label { display: block; font-size: 13px; color: color-mix(in srgb, var(--text) 70%, transparent); margin: 14px 0 5px; }
-input[type=text], input[type=number], input[type=email], select { width: 100%; min-height: 38px; padding: 7px 10px; font: inherit; font-size: 15px; color: var(--text);
+input[type=text], input[type=number], input[type=email], input[type=search], select { width: 100%; min-height: 38px; padding: 7px 10px; font: inherit; font-size: 15px; color: var(--text);
   caret-color: var(--accent); background: var(--surface); border: 1px solid var(--divider); border-radius: 0; }
 input[type=text]:hover, input[type=number]:hover { border-color: color-mix(in srgb, var(--text) 55%, transparent); }
 input:focus-visible, select:focus-visible { border-color: var(--accent); outline-offset: 0; }
