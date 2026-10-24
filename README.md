@@ -7,8 +7,8 @@
 <h1 align="center"><b>Be the first to message the seller.</b></h1><br>
 <p align="center">Deal Radar watches Facebook Marketplace and your Facebook groups — plus the top marketplaces in Czechia, Slovakia, Poland, Germany, Austria, Norway, Finland and Denmark, eBay.com and Craigslist in the US, Mercari in Japan and Chrono24 for watches — and tells you about a new listing before the deal is gone.</p>
 
-<p align="center"><b>Free in your browser.</b> The extension alone: 3 watches, checked every 10 minutes, notifications in the browser.<br>
-<b>The plan, €9 a month for 5 watches:</b> Telegram alerts on your phone, the server checks every minute — also while your computer is off.</p>
+<p align="center"><b>Free in your browser.</b> The extension alone: 1 watch, checked every 10 minutes, notifications in the browser.<br>
+<b>The plan, €9 a month for each additional 5 watches:</b> Telegram alerts on your phone, the server checks every minute — also while your computer is off.</p>
 
 <p align="center">
   <a href="https://radar.4xs.dev">radar.4xs.dev</a> · <a href="https://kotyzap.github.io/Deal-Radar/">project page</a> · <a href="https://radar.4xs.dev/privacy">privacy</a> · by <a href="https://4xs.dev">4xs.dev</a>
